@@ -1,0 +1,1184 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Description of current projects on Github and updates">
+      
+      
+        <link rel="canonical" href="https://github.com/samapriya/Planet-GEE-Pipeline-CLI/projects/gee_asset_manager_addon/">
+      
+      
+        <meta name="author" content="Samapriya Roy">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-unidata-1.5.4">
+    
+    
+      
+        <title>Google Earth Engine Asset Manager Addon - Samapriya Roy</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-b1a1975878.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-f78e5cb881.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../.." title="Samapriya Roy" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Projects
+                </span>
+              
+            
+            
+              Google Earth Engine Asset Manager Addon
+            
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/samapriya/Planet-GEE-Pipeline-CLI" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      samapriya/Planet-GEE-Pipeline-CLI
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Samapriya Roy
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/samapriya/Planet-GEE-Pipeline-CLI" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      samapriya/Planet-GEE-Pipeline-CLI
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../aboutme/" title="About me" class="md-nav__link">
+      About me
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../cv/" title="Current CV" class="md-nav__link">
+      Current CV
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planet_pipeline_gui/" title="Planet Bulk Data Downloader GUI" class="md-nav__link">
+      Planet Bulk Data Downloader GUI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Google Earth Engine Asset Manager Addon
+      </label>
+    
+    <a href="./" title="Google Earth Engine Asset Manager Addon" class="md-nav__link md-nav__link--active">
+      Google Earth Engine Asset Manager Addon
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-uploader" title="Batch uploader" class="md-nav__link">
+    Batch uploader
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parsing-metadata" title="Parsing metadata" class="md-nav__link">
+    Parsing metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" title="Usage examples" class="md-nav__link">
+    Usage examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ee-user" title="EE User" class="md-nav__link">
+    EE User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image" title="Upload a directory with images to your myfolder/mycollection and associate properties with each image:" class="md-nav__link">
+    Upload a directory with images to your myfolder/mycollection and associate properties with each image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination" title="Upload a directory with images with specific NoData value to a selected destination" class="md-nav__link">
+    Upload a directory with images with specific NoData value to a selected destination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-list" title="Asset List" class="md-nav__link">
+    Asset List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-query" title="Task Query" class="md-nav__link">
+    Task Query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-query-during-ingestion" title="Task Query during ingestion" class="md-nav__link">
+    Task Query during ingestion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-report" title="Task Report" class="md-nav__link">
+    Task Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-a-collection-with-content" title="Delete a collection with content:" class="md-nav__link">
+    Delete a collection with content:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-all-directories-collections-based-on-a-unix-like-pattern" title="Delete all directories / collections based on a Unix-like pattern" class="md-nav__link">
+    Delete all directories / collections based on a Unix-like pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-move" title="Assets Move" class="md-nav__link">
+    Assets Move
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-copy" title="Assets Copy" class="md-nav__link">
+    Assets Copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-access" title="Assets Access" class="md-nav__link">
+    Assets Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-collection-property" title="Set Collection Property" class="md-nav__link">
+    Set Collection Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-to-fusion-table" title="Convert to Fusion Table" class="md-nav__link">
+    Convert to Fusion Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleanup-utility" title="Cleanup Utility" class="md-nav__link">
+    Cleanup Utility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-all-tasks" title="Cancel all tasks" class="md-nav__link">
+    Cancel all tasks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planet_gee_pipeline_cli/" title="Planet-Google Earth Engine Pipeline CLI" class="md-nav__link">
+      Planet-Google Earth Engine Pipeline CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planet_gee_pipeline_gui/" title="Planet-Google Earth Engine Pipeline GUI" class="md-nav__link">
+      Planet-Google Earth Engine Pipeline GUI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
+      ArcMap Addon Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../synthetic_models/" title="Synthetic Landscape Generation Models" class="md-nav__link">
+      Synthetic Landscape Generation Models
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../release-notes/" title="Release notes" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../credits/" title="Credits" class="md-nav__link">
+      Credits
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-uploader" title="Batch uploader" class="md-nav__link">
+    Batch uploader
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parsing-metadata" title="Parsing metadata" class="md-nav__link">
+    Parsing metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" title="Usage examples" class="md-nav__link">
+    Usage examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ee-user" title="EE User" class="md-nav__link">
+    EE User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image" title="Upload a directory with images to your myfolder/mycollection and associate properties with each image:" class="md-nav__link">
+    Upload a directory with images to your myfolder/mycollection and associate properties with each image:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination" title="Upload a directory with images with specific NoData value to a selected destination" class="md-nav__link">
+    Upload a directory with images with specific NoData value to a selected destination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-list" title="Asset List" class="md-nav__link">
+    Asset List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-query" title="Task Query" class="md-nav__link">
+    Task Query
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-query-during-ingestion" title="Task Query during ingestion" class="md-nav__link">
+    Task Query during ingestion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-report" title="Task Report" class="md-nav__link">
+    Task Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-a-collection-with-content" title="Delete a collection with content:" class="md-nav__link">
+    Delete a collection with content:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-all-directories-collections-based-on-a-unix-like-pattern" title="Delete all directories / collections based on a Unix-like pattern" class="md-nav__link">
+    Delete all directories / collections based on a Unix-like pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-move" title="Assets Move" class="md-nav__link">
+    Assets Move
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-copy" title="Assets Copy" class="md-nav__link">
+    Assets Copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assets-access" title="Assets Access" class="md-nav__link">
+    Assets Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-collection-property" title="Set Collection Property" class="md-nav__link">
+    Set Collection Property
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-to-fusion-table" title="Convert to Fusion Table" class="md-nav__link">
+    Convert to Fusion Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleanup-utility" title="Cleanup Utility" class="md-nav__link">
+    Cleanup Utility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel-all-tasks" title="Cancel all tasks" class="md-nav__link">
+    Cancel all tasks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="google-earth-engine-batch-asset-manager-with-addons">Google Earth Engine Batch Asset Manager with Addons</h1>
+<p><a href="https://zenodo.org/badge/latestdoi/87708514"><img alt="DOI" src="https://zenodo.org/badge/87708514.svg" /></a></p>
+<p>Google Earth Engine Batch Asset Manager with Addons is an extension of the one developed by Lukasz <a href="https://github.com/tracek/gee_asset_manager">here</a> and additional tools were added to include functionality for moving assets, conversion of objects to fusion table, cleaning folders, querying tasks. The ambition is apart from helping user with batch actions on assets along with interacting and extending capabilities of existing GEE CLI. It is developed case by case basis to include more features in the future as it becomes available or as need arises. </p>
+<p><img alt="CLI" src="http://i.imgur.com/8Cvh3XY.gif" /></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#getting-started">Getting started</a><ul>
+<li><a href="#batch-uploader">Batch uploader</a></li>
+<li><a href="#parsing-metadata">Parsing metadata</a></li>
+</ul>
+</li>
+<li><a href="#usage-examples">Usage examples</a><ul>
+<li><a href="#ee-user">EE User</a></li>
+<li><a href="#upload-a-directory-with-images-and-associate-properties-with-each-image">Upload a directory with images and associate properties with each image:</a></li>
+<li><a href="#upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination">Upload a directory with images with specific NoData value to a selected destination:</a></li>
+<li><a href="#asset-list">Asset List</a></li>
+<li><a href="#task-query">Task Query</a></li>
+<li><a href="#task-query-during-ingestion">Task Query during ingestion</a></li>
+<li><a href="#task-report">Task Report</a></li>
+<li><a href="#delete-a-collection-with-content">Delete a collection with content:</a></li>
+<li><a href="#assets-move">Assets Move</a></li>
+<li><a href="#assets-copy">Assets Copy</a></li>
+<li><a href="#assets-access">Assets Access</a></li>
+<li><a href="#set-collection-property">Set Collection Property</a></li>
+<li><a href="#convert-to-fusion-table">Convert to Fusion Table</a></li>
+<li><a href="#cleanup-utility">Cleanup Utility</a></li>
+<li><a href="#cancel-all-tasks">Cancel all tasks</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>We assume Earth Engine Python API is installed and EE authorised as desribed <a href="https://developers.google.com/earth-engine/python_install">here</a>. To install:</p>
+<pre><code>git clone https://github.com/samapriya/gee_asset_manager_addon
+cd gee_asset_manager &amp;&amp; pip install .
+</code></pre>
+
+<p>Installation is an optional step; the application can be also run
+directly by executing geeadd.py script. The advantage of having it
+installed is being able to execute geeadd as any command line tool. I
+recommend installation within virtual environment. To install run</p>
+<pre><code>python setup.py develop or python setup.py install
+
+In a linux distribution
+sudo python setup.py develop or sudo python setup.py install
+</code></pre>
+
+<h2 id="getting-started">Getting started</h2>
+<p>As usual, to print help:</p>
+<pre><code>Google Earth Engine Batch Asset Manager with Addons
+
+positional arguments:
+  {ee_user,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,convert2ft,cleanout,cancel}
+    ee_user             Allows you to associate/change GEE account to system
+    upload              Batch Asset Uploader.
+    lst                 List assets in a folder/collection or write as text
+                        file
+    tasks               Queries currently running, enqued,failed
+    taskquery           Queries currently running, enqued,failed ingestions
+                        and uploaded assets
+    report              Create a report of all tasks and exports to a CSV file
+    delete              Deletes collection and all items inside. Supports
+                        Unix-like wildcards.
+    mover               Moves all assets from one collection to another
+    copy                Copies all assets from one collection to another:
+                        Including copying from other users if you have read
+                        permission to their assets
+    access              Sets Permissions for Images, Collection or all assets
+                        in EE Folder Example: python ee_permissions.py --mode
+                        &quot;folder&quot; --asset &quot;users/john/doe&quot; --user
+                        &quot;jimmy@doe.com:R&quot;
+    collprop            Sets Overall Properties for Image Collection
+    convert2ft          Uploads a given feature collection to Google Fusion
+                        Table.
+    cleanout            Clear folders with datasets from earlier downloaded
+    cancel              Cancel all running tasks
+
+optional arguments:
+  -h, --help            show this help message and exit
+</code></pre>
+
+<p>To obtain help for a specific functionality, simply call it with <em>help</em>
+switch, e.g.: <code>geeadd upload -h</code>. If you didn't install geeadd, then you
+can run it just by going to <em>geeadd</em> directory and running <code>python
+geeadd.py [arguments go here]</code></p>
+<h2 id="batch-uploader">Batch uploader</h2>
+<p>The script creates an Image Collection from GeoTIFFs in your local
+directory. By default, the collection name is the same as the local
+directory name; with optional parameter you can provide a different
+name. Another optional parameter is a path to a CSV file with metadata
+for images, which is covered in the next section:
+<a href="#parsing-metadata">Parsing metadata</a>.</p>
+<pre><code>usage: geeadd.py upload [-h] -u USER --source SOURCE --dest DEST [-m METADATA]
+                        [--large] [--nodata NODATA]
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Required named arguments.:
+  -u USER, --user USER  Google account name (gmail address).
+  --source SOURCE       Path to the directory with images for upload.
+  --dest DEST           Destination. Full path for upload to Google Earth
+                        Engine, e.g. users/johndoe/myponycollection
+
+Optional named arguments:
+  -m METADATA, --metadata METADATA
+                        Path to CSV with metadata.
+  --large               (Advanced) Use multipart upload. Might help if upload
+                        of large files is failing on some systems. Might cause
+                        other issues.
+  --nodata NODATA       The value to burn into the raster as NoData (missing
+                        data)
+</code></pre>
+
+<h3 id="parsing-metadata">Parsing metadata</h3>
+<p>By metadata we understand here the properties associated with each image. Thanks to these, GEE user can easily filter collection based on specified criteria. The file with metadata should be organised as follows:</p>
+<table>
+<thead>
+<tr>
+<th>filename (without extension)</th>
+<th>property1 header</th>
+<th>property2 header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file1</td>
+<td>value1</td>
+<td>value2</td>
+</tr>
+<tr>
+<td>file2</td>
+<td>value3</td>
+<td>value4</td>
+</tr>
+</tbody>
+</table>
+<p>Note that header can contain only letters, digits and underscores. </p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>id_no</th>
+<th>class</th>
+<th>category</th>
+<th>binomial</th>
+<th>system:time_start</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my_file_1</td>
+<td>GASTROPODA</td>
+<td>EN</td>
+<td>Aaadonta constricta</td>
+<td>1478943081000</td>
+</tr>
+<tr>
+<td>my_file_2</td>
+<td>GASTROPODA</td>
+<td>CR</td>
+<td>Aaadonta irregularis</td>
+<td>1478943081000</td>
+</tr>
+</tbody>
+</table>
+<p>The corresponding files are my_file_1.tif and my_file_2.tif. With each of the files five properties are associated: id_no, class, category, binomial and system:time_start. The latter is time in Unix epoch format, in milliseconds, as documented in GEE glosary. The program will match the file names from the upload directory with ones provided in the CSV and pass the metadata in JSON format:</p>
+<pre><code>{ id_no: my_file_1, class: GASTROPODA, category: EN, binomial: Aaadonta constricta, system:time_start: 1478943081000}
+</code></pre>
+
+<p>The program will report any illegal fields, it will also complain if not all of the images passed for upload have metadata associated. User can opt to ignore it, in which case some assets will have no properties.</p>
+<p>Having metadata helps in organising your asstets, but is not mandatory - you can skip it.</p>
+<h2 id="usage-examples">Usage examples</h2>
+<h3 id="ee-user">EE User</h3>
+<p>This tool is designed to allow different users to change earth engine authentication credentials. The tool invokes the authentication call and copies the authentication key verification website to the clipboard which can then be pasted onto a browser and the generated key can be pasted back</p>
+<h3 id="upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image">Upload a directory with images to your myfolder/mycollection and associate properties with each image:</h3>
+<pre><code>geeadd upload -u johndoe@gmail.com --source path_to_directory_with_tif -m path_to_metadata.csv --dest users/johndoe/myfolder/myponycollection
+</code></pre>
+
+<p>The script will prompt the user for Google account password. The program will also check that all properties in path_to_metadata.csv do not contain any illegal characters for GEE. Don't need metadata? Simply skip this option.</p>
+<h3 id="upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination">Upload a directory with images with specific NoData value to a selected destination</h3>
+<pre><code>geeadd upload -u johndoe@gmail.com --source path_to_directory_with_tif --dest users/johndoe/myfolder/myponycollection --nodata 222
+</code></pre>
+
+<p>In this case we need to supply full path to the destination, which is helpful when we upload to a shared folder. In the provided example we also burn value 222 into all rasters for missing data (NoData).</p>
+<h3 id="asset-list">Asset List</h3>
+<p>This tool is designed to either print or output asset lists within folders or collections using earthengine ls tool functions.</p>
+<pre><code>usage: geeadd lst [-h] --location LOCATION --type TYPE [--items ITEMS]
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --location LOCATION  This it the location of your folder/collection
+  --type TYPE          Whether you want the list to be printed or output as
+                       text(print/report)
+  --items ITEMS        Number of items to list
+</code></pre>
+
+<h3 id="task-query">Task Query</h3>
+<p>This script counts all currently running and ready tasks along with failed tasks.</p>
+<pre><code>usage: geeadd.py tasks [-h]
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+geeadd.py tasks
+</code></pre>
+
+<h3 id="task-query-during-ingestion">Task Query during ingestion</h3>
+<p>This script can be used intermittently to look at running, failed and ready(waiting) tasks during ingestion. This script is a special case using query tasks only when uploading assets to collection by providing collection pathway to see how collection size increases.</p>
+<pre><code>usage: geeadd.py taskquery [-h] [--destination DESTINATION]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --destination DESTINATION
+                        Full path to asset where you are uploading files
+
+geeadd.py taskquery &quot;users/johndoe/myfolder/myponycollection&quot;                       
+</code></pre>
+
+<h3 id="task-report">Task Report</h3>
+<p>Sometimes it is important to generate a report based on all tasks that is running or has finished. Generated report includes taskId, data time, task status and type</p>
+<pre><code>usage: geeadd.py report [-h] [--r R] [--e E]
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --r R       Path &amp; CSV filename where the report will be saved
+  --e E       Path &amp; CSV filename where the errorlog will be saved
+
+geeadd.py report --r &quot;report.csv&quot; --e &quot;errorlog.csv&quot;
+</code></pre>
+
+<h3 id="delete-a-collection-with-content">Delete a collection with content:</h3>
+<p>The delete is recursive, meaning it will delete also all children assets: images, collections and folders. Use with caution!</p>
+<pre><code>geeadd delete users/johndoe/test
+</code></pre>
+
+<p>Console output:</p>
+<pre><code>2016-07-17 16:14:09,212 :: oauth2client.client :: INFO :: Attempting refresh to obtain initial access_token
+2016-07-17 16:14:09,213 :: oauth2client.client :: INFO :: Refreshing access_token
+2016-07-17 16:14:10,842 :: root :: INFO :: Attempting to delete collection test
+2016-07-17 16:14:16,898 :: root :: INFO :: Collection users/johndoe/test removed
+</code></pre>
+
+<h3 id="delete-all-directories-collections-based-on-a-unix-like-pattern">Delete all directories / collections based on a Unix-like pattern</h3>
+<pre><code>geeadd delete users/johndoe/*weird[0-9]?name*
+</code></pre>
+
+<h3 id="assets-move">Assets Move</h3>
+<p>This script allows us to recursively move assets from one collection to the other.</p>
+<pre><code>usage: geeadd.py mover [-h] [--assetpath ASSETPATH] [--finalpath FINALPATH]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --assetpath ASSETPATH
+                        Existing path of assets
+  --finalpath FINALPATH
+                        New path for assets
+geeadd.py mover --assetpath &quot;users/johndoe/myfolder/myponycollection&quot; --destination &quot;users/johndoe/myfolder/myotherponycollection&quot;                  
+</code></pre>
+
+<h3 id="assets-copy">Assets Copy</h3>
+<p>This script allows us to recursively copy assets from one collection to the other. If you have read acess to assets from another user this will also allow you to copy assets from their collections.</p>
+<pre><code>usage: geeadd.py copy [-h] [--initial INITIAL] [--final FINAL]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --initial INITIAL  Existing path of assets
+  --final FINAL      New path for assets
+geeadd.py mover --initial &quot;users/johndoe/myfolder/myponycollection&quot; --final &quot;users/johndoe/myfolder/myotherponycollection&quot;                  
+</code></pre>
+
+<h3 id="assets-access">Assets Access</h3>
+<p>This tool allows you to set asset acess for either folder , collection or image recursively meaning you can add collection access properties for multiple assets at the same time.</p>
+<pre><code>usage: geeadd access [-h] --mode MODE --asset ASSET --user USER
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --mode MODE    This lets you select if you want to change permission or
+                 folder/collection/image
+  --asset ASSET  This is the path to the earth engine asset whose permission
+                 you are changing folder/collection/image
+  --user USER    This is the email address to whom you want to give read or
+                 write permission Usage: &quot;john@doe.com:R&quot; or &quot;john@doe.com:W&quot;
+                 R/W refers to read or write permission
+geeadd.py access --mode folder --asset &quot;folder/collection/image&quot; --user &quot;john@doe.com:R&quot;
+</code></pre>
+
+<h3 id="set-collection-property">Set Collection Property</h3>
+<p>This script is derived from the ee tool to set collection properties and will set overall properties for collection. </p>
+<pre><code>usage: geeadd.py collprop [-h] [--coll COLL] [--p P]
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --coll COLL  Path of Image Collection
+  --p P        &quot;system:description=Description&quot;/&quot;system:provider_url=url&quot;/&quot;sys
+               tem:tags=tags&quot;/&quot;system:title=title
+</code></pre>
+
+<h3 id="convert-to-fusion-table">Convert to Fusion Table</h3>
+<p>Once validated with gdal and google fusion table it can be used to convert any geoObject to google fusion table. Forked and contributed by Gennadii <a href="https://github.com/gena/ogr2ft">here</a>. The scripts can be used only with a specific google account</p>
+<pre><code>usage: geeadd.py convert2ft [-h] --i I --o O [--add_missing]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --i I          input feature source (KML, SHP, SpatiLite, etc.)
+  --o O          output Fusion Table name
+  --add_missing  add missing features from the last inserted feature index
+
+geeadd.py convert2ft --i &quot;./aoi.kml&quot; --o &quot;converted_aoi&quot;
+</code></pre>
+
+<h3 id="cleanup-utility">Cleanup Utility</h3>
+<p>This script is used to clean folders once all processes have been completed. In short this is a function to clear folder on local machine.</p>
+<pre><code>usage: geeadd.py cleanout [-h] [--dirpath DIRPATH]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --dirpath DIRPATH  Folder you want to delete after all processes have been
+                     completed
+geeadd.py cleanout --dirpath &quot;./folder&quot;
+</code></pre>
+
+<h3 id="cancel-all-tasks">Cancel all tasks</h3>
+<p>This is a simpler tool, can be called directly from the earthengine cli as well</p>
+<pre><code>earthengine cli command
+earthengine task cancel all
+
+usage: geeadd.py cancel [-h]
+
+optional arguments:
+  -h, --help  show this help message and exit
+</code></pre>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../planet_pipeline_gui/" title="Planet Bulk Data Downloader GUI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Planet Bulk Data Downloader GUI
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../planet_gee_pipeline_cli/" title="Planet-Google Earth Engine Pipeline CLI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Planet-Google Earth Engine Pipeline CLI
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 Samapriya Roy
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/samapriya" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/samapriyaroy" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/in/samapriya" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-0b7df094bf.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
