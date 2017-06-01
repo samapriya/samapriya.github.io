@@ -662,12 +662,12 @@
         }, 
         {
             "location": "/release-notes/", 
-            "text": "Release notes\n\n\n\n\n\n\n\n\nProject Name\n\n\nDigital Object Identification Number(DOI)\n\n\nRelease\n\n\n\n\n\n\n\n\n\n\nPlanet-GEE-Pipeline-CLI\n\n\n\n\n0.1.1\n\n\n\n\n\n\nPlanet-GEE-Pipeline-GUI\n\n\n\n\n0.1.1\n\n\n\n\n\n\nPlanet-Pipeline-GUI\n\n\n\n\n0.1\n\n\n\n\n\n\nGEE Asset Manager Addons\n\n\n\n\n0.1.5\n\n\n\n\n\n\nSynthetic LandScp Model\n\n\n\n\n0.1.1", 
+            "text": "Release notes\n\n\n\n\n\n\n\n\nProject Name\n\n\nDigital Object Identification Number(DOI)\n\n\nRelease\n\n\n\n\n\n\n\n\n\n\nPlanet-GEE-Pipeline-CLI\n\n\n\n\n0.1.1\n\n\n\n\n\n\nPlanet-GEE-Pipeline-GUI\n\n\n\n\n0.1.1\n\n\n\n\n\n\nPlanet-Pipeline-GUI\n\n\n\n\n0.1\n\n\n\n\n\n\nGEE Asset Manager Addons\n\n\n\n\n0.1.5\n\n\n\n\n\n\nSynthetic LandScape Models\n\n\n\n\n0.1.1\n\n\n\n\n\n\nArcMap Addons\n\n\n\n\n0.1", 
             "title": "Release notes"
         }, 
         {
             "location": "/release-notes/#release-notes", 
-            "text": "Project Name  Digital Object Identification Number(DOI)  Release      Planet-GEE-Pipeline-CLI   0.1.1    Planet-GEE-Pipeline-GUI   0.1.1    Planet-Pipeline-GUI   0.1    GEE Asset Manager Addons   0.1.5    Synthetic LandScp Model   0.1.1", 
+            "text": "Project Name  Digital Object Identification Number(DOI)  Release      Planet-GEE-Pipeline-CLI   0.1.1    Planet-GEE-Pipeline-GUI   0.1.1    Planet-Pipeline-GUI   0.1    GEE Asset Manager Addons   0.1.5    Synthetic LandScape Models   0.1.1    ArcMap Addons   0.1", 
             "title": "Release notes"
         }, 
         {
