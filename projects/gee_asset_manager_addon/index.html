@@ -755,7 +755,7 @@
                 
                 <h1 id="google-earth-engine-batch-asset-manager-with-addons">Google Earth Engine Batch Asset Manager with Addons</h1>
 <p><a href="https://zenodo.org/badge/latestdoi/87708514"><img alt="DOI" src="https://zenodo.org/badge/87708514.svg" /></a></p>
-<p>Google Earth Engine Batch Asset Manager with Addons is an extension of the one developed by Lukasz <a href="https://github.com/tracek/gee_asset_manager">here</a> and additional tools were added to include functionality for moving assets, conversion of objects to fusion table, cleaning folders, querying tasks. The ambition is apart from helping user with batch actions on assets along with interacting and extending capabilities of existing GEE CLI. It is developed case by case basis to include more features in the future as it becomes available or as need arises. </p>
+<p>Google Earth Engine Batch Asset Manager with Addons is an extension of the one developed by Lukasz <a href="https://github.com/tracek/gee_asset_manager">here</a> and additional tools were added to include functionality for moving assets, conversion of objects to fusion table, cleaning folders, querying tasks. The ambition is apart from helping user with batch actions on assets along with interacting and extending capabilities of existing GEE CLI. It is developed case by case basis to include more features in the future as it becomes available or as need arises. tab.</p>
 <p><img alt="CLI" src="http://i.imgur.com/8Cvh3XY.gif" /></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
@@ -785,7 +785,14 @@
 </li>
 </ul>
 <h2 id="installation">Installation</h2>
-<p>We assume Earth Engine Python API is installed and EE authorised as desribed <a href="https://developers.google.com/earth-engine/python_install">here</a>. To install:</p>
+<p>We assume Earth Engine Python API is installed and EE authorised as desribed <a href="https://developers.google.com/earth-engine/python_install">here</a>. This toolbox also uses some functionality from GDAL
+For installing GDAL in Ubuntu</p>
+<pre><code>sudo add-apt-repository ppa:ubuntugis/ppa &amp;&amp; sudo apt-get update
+sudo apt-get install gdal-bin
+</code></pre>
+
+<p>For Windows I found this <a href="https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows">guide</a> from UCLA</p>
+<p>To install toolbox:</p>
 <pre><code>git clone https://github.com/samapriya/gee_asset_manager_addon
 cd gee_asset_manager &amp;&amp; pip install .
 </code></pre>

@@ -768,8 +768,10 @@
                 
                 
                 <h1 id="planet-gee-pipeline-gui">Planet GEE Pipeline GUI</h1>
+<p><a href="https://doi.org/10.5281/zenodo.572263"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.572263.svg" /></a>
+<a href="https://jetstream-cloud.org/"><img alt="JetStream" src="https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg" /></a>
+<a href="https://www.planet.com/products/education-and-research/"><img alt="Planet" src="https://img.shields.io/badge/SupportedBy%3A-Planet%20Ambassador%20Program-brightgreen.svg" /></a></p>
 <p>The Planet Pipeline GUI came from the actual CLI (command line interface tools) to enable the use of tools required to access control and download planet labs assets (PlanetScope and RapidEye OrthoTiles) as well as parse metadata in a tabular form which maybe required by other applications.</p>
-<p><a href="https://doi.org/10.5281/zenodo.572263"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.572263.svg" /></a></p>
 <p><img alt="GUI" src="http://i.imgur.com/ld9xJu6.gif" /></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
@@ -812,6 +814,7 @@
 <pre><code>WxPython(which is what the GUI is built on)
 for windows(Tested in Windows 10)
 https://wxpython.org/download.php
+pip install wxPython
 
 for linux(Tested in Ubuntu 16)
 sudo add-apt-repository &quot;deb http://archive.ubuntu.com/ubuntu utopic main restricted universe&quot;  
@@ -820,6 +823,13 @@ apt-cache search python-wxgtk3.0
 sudo apt-get install python-wxgtk3.0
 </code></pre>
 
+<p>This toolbox also uses some functionality from GDAL
+For installing GDAL in Ubuntu</p>
+<pre><code>sudo add-apt-repository ppa:ubuntugis/ppa &amp;&amp; sudo apt-get update
+sudo apt-get install gdal-bin
+</code></pre>
+
+<p>For Windows I found this <a href="https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows">guide</a> from UCLA</p>
 <h2 id="usage-examples">Usage examples</h2>
 <p>Usage examples have been segmented into two parts focusing on both planet tools as well as earth engine tools, earth engine tools include additional developments in CLI which allows you to recursively interact with their python API. To run the tool open a command prompt window or terminal and type</p>
 <pre><code>python ee_ppipe.pyc
