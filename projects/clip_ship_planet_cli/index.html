@@ -10,7 +10,7 @@
         <meta name="description" content="Description of current projects on Github and updates">
       
       
-        <link rel="canonical" href="https://github.com/samapriya/projects/planet_pipeline_gui/">
+        <link rel="canonical" href="https://github.com/samapriya/projects/clip_ship_planet_cli/">
       
       
         <meta name="author" content="Samapriya Roy">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Planet Bulk Data Downloader GUI - Samapriya Roy</title>
+        <title>Clip Ship Planet CLI - Samapriya Roy</title>
       
     
     
@@ -87,7 +87,7 @@
                 </span>
               
             
-            Planet Bulk Data Downloader GUI
+            Clip Ship Planet CLI
           
         </span>
       </div>
@@ -249,30 +249,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../clip_ship_planet_cli/" title="Clip Ship Planet CLI" class="md-nav__link">
-      Clip Ship Planet CLI
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../slack_notifier_cli_addon/" title="Slack Notifier CLI Addon" class="md-nav__link">
-      Slack Notifier CLI Addon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -284,11 +260,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Planet Bulk Data Downloader GUI
+        Clip Ship Planet CLI
       </label>
     
-    <a href="./" title="Planet Bulk Data Downloader GUI" class="md-nav__link md-nav__link--active">
-      Planet Bulk Data Downloader GUI
+    <a href="./" title="Clip Ship Planet CLI" class="md-nav__link md-nav__link--active">
+      Clip Ship Planet CLI
     </a>
     
       
@@ -302,13 +278,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
-    Table of contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#installation" title="Installation" class="md-nav__link">
     Installation
   </a>
@@ -316,8 +285,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#getting-started" title="Getting started" class="md-nav__link">
     Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" title="Usage examples" class="md-nav__link">
+    Usage examples
   </a>
   
     <nav class="md-nav">
@@ -345,15 +328,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-size" title="Download Size" class="md-nav__link">
-    Download Size
+  <a href="#list-ids" title="List IDs" class="md-nav__link">
+    List IDs
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-asset" title="Download Asset" class="md-nav__link">
-    Download Asset
+  <a href="#clipping-with-geojson" title="Clipping with GeoJSON" class="md-nav__link">
+    Clipping with GeoJSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-clipped-imagery" title="Downloading Clipped Imagery" class="md-nav__link">
+    Downloading Clipped Imagery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting" title="Sorting" class="md-nav__link">
+    Sorting
   </a>
   
 </li>
@@ -369,6 +366,30 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../slack_notifier_cli_addon/" title="Slack Notifier CLI Addon" class="md-nav__link">
+      Slack Notifier CLI Addon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planet_pipeline_gui/" title="Planet Bulk Data Downloader GUI" class="md-nav__link">
+      Planet Bulk Data Downloader GUI
+    </a>
   </li>
 
         
@@ -518,13 +539,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
-    Table of contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#installation" title="Installation" class="md-nav__link">
     Installation
   </a>
@@ -532,8 +546,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#getting-started" title="Getting started" class="md-nav__link">
     Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" title="Usage examples" class="md-nav__link">
+    Usage examples
   </a>
   
     <nav class="md-nav">
@@ -561,15 +589,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-size" title="Download Size" class="md-nav__link">
-    Download Size
+  <a href="#list-ids" title="List IDs" class="md-nav__link">
+    List IDs
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#download-asset" title="Download Asset" class="md-nav__link">
-    Download Asset
+  <a href="#clipping-with-geojson" title="Clipping with GeoJSON" class="md-nav__link">
+    Clipping with GeoJSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-clipped-imagery" title="Downloading Clipped Imagery" class="md-nav__link">
+    Downloading Clipped Imagery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting" title="Sorting" class="md-nav__link">
+    Sorting
   </a>
   
 </li>
@@ -594,69 +636,200 @@
               
                 
                 
-                <h1 id="planet-pipeline-gui">Planet Pipeline GUI</h1>
-<p>The Planet Pipeline GUI came from the actual CLI (command line interface tools) to enable the use of tools required to access control and download planet labs assets as well as parse metadata in a tabular form which maybe required by other applications.</p>
-<p><a href="https://zenodo.org/badge/latestdoi/90283954"><img alt="DOI" src="https://zenodo.org/badge/90283954.svg" /></a></p>
-<p><img alt="GUI" src="http://i.imgur.com/mz6WfQM.gif" /></p>
+                <h1 id="clip-ship-planet-cli-addon">Clip Ship Planet CLI addon</h1>
+<p><a href="https://doi.org/10.5281/zenodo.888102"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.888102.svg" /></a></p>
+<p>Planet's Clip API was a compute API designed to allowed users to clip the images to their area of interest. This would save them time in preprocessing and also allow the user to save on their area quota which might have restrictions. Based on Planet's Education and Research Program this quota is set at 10,000 square kilometers a month, which means saving up on quota is very useful. The discussion also led to an important clarification that users are in fact charged only for the area downloaded post clip if using the clip operation and hence this tool. This tool takes a sequential approach from activation to generating a clip request for multiple images activated and then processing the download tokens to actually download the clipped image files. The tool also consists of a sort function which allows the user to extract the files and sort them by type and deleting the original files to save on space.</p>
+<h2 id="installation">Installation</h2>
+<p>To install the Clip-Ship-Planet-CLI you can simply perform the following action with Linux(Tested on Ubuntu 16):</p>
+<pre><code>git clone https://github.com/samapriya/Clip-Ship-Planet-CLI.git
+cd Clip-Ship-Planet-CLI &amp;&amp; pip install
+</code></pre>
+
+<p>On a windows as well as a linux machine, installation is an optional step; the application can also be run directly by executing pclip.py script. The advantage of having it installed is being able to execute ppipe as any command line tool. I recommend installation within virtual environment but you can also install it to system python and should not create any conflicts. To install on windows download the setup files as a zip package, unpack and run</p>
+<p>python setup.py develop or python setup.py install</p>
+<p>In a linux distribution
+sudo python setup.py develop or sudo python setup.py install</p>
+<pre><code>pclip -h
+</code></pre>
+
+<p><img alt="pclip-cli" src="https://i.imgur.com/bqds1Cm.jpg" /></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#getting-started">Getting started</a><ul>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#usage-examples">Usage examples</a><ul>
 <li><a href="#planet-key">Planet Key</a></li>
-<li><a href="#aoi-json">AOI JSON</a></li>
-<li><a href="#activate-or-check-asset">Activate or Check Asset</a></li>
-<li><a href="#download-size">Download Size</a></li>
-<li><a href="#download-asset">Download Asset</a></li>
-<li><a href="#metadata-parser">Metadata Parser</a></li>
 </ul>
 </li>
-<li><a href="#credits">Credits</a></li>
+<li><a href="#aoi-json">AOI JSON</a></li>
+<li><a href="#activate-or-check-asset">Activate or Check Asset</a><ul>
+<li><a href="#list-ids">List IDs</a></li>
 </ul>
-<h2 id="installation">Installation</h2>
-<p>We assume Planet Python API is installed you can install by simply running </p>
-<pre><code>pip install planet
-</code></pre>
-
-<p>Further instructions can be found <a href="https://www.planet.com/docs/api-quickstart-examples/cli/">here</a> </p>
-<p>To install the tool:</p>
-<pre><code>git clone https://github.com/samapriya/Planet-Pipeline-GUI.git
-cd Planet-Pipeline-GUI &amp;&amp; pip install .
-</code></pre>
-
-<p>The application can be also run directly by executing PlanetPipe_GUI.pyc script. 
-You require two important packages for this to run</p>
-<pre><code>WxPython(which is what the GUI is built on)
-for windows(Tested in Windows 10)
-https://wxpython.org/download.php
-
-for linux(Tested in Ubuntu 16)
-sudo add-apt-repository &quot;deb http://archive.ubuntu.com/ubuntu utopic main restricted universe&quot;  
-sudo apt-get update
-apt-cache search python-wxgtk3.0
-sudo apt-get install python-wxgtk3.0
-</code></pre>
-
+</li>
+<li><a href="#clipping-with-geojson">Clipping with GeoJSON</a></li>
+<li><a href="#clipping-with-json">Clipping with JSON</a></li>
+<li><a href="#downloading-clipped-imagery">Downloading Clipped Imagery</a><ul>
+<li><a href="#sorting">Sorting</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="getting-started">Getting started</h2>
-<p>This should be pretty simple on windows systems with python &gt;=2.7.13 you can just double click the PlanetPipe_GUI.pyc for linux user python PlanetPipe_GUI.pyc</p>
+<p>As usual, to print help:</p>
+<pre><code>Planet Clip Tools CLI
+
+positional arguments:
+  { ,planetkey,aoijson,activate,aoiupdate,idlist,geojsonc,jsonc,downloadclips,sort}
+                        -------------------------------------------
+                        -----Choose from Planet Clip Tools-----
+                        -------------------------------------------
+    planetkey           Enter your planet API Key
+    aoijson             Tool to convert KML, Shapefile,WKT,GeoJSON or Landsat
+                        WRS PathRow file to AreaOfInterest.JSON file with
+                        structured query for use with Planet API 1.0
+    activate            Tool to query and/or activate Planet Assets
+    idlist              Allows users to generate an id list for the selected
+                        item and asset type for example item_asset=
+                        PSOrthoTile analytic/PSScene3Band visual. This is used
+                        with the clip tool
+    geojsonc            Allows users to batch submit clipping request to the
+                        Planet Clip API using geometry in geojson file
+    jsonc               Allows users to batch submit clipping request to the
+                        Planet Clip API using geometry in structured json
+                        file. This is preferred because the structured JSON
+                        allows the activate tool to stream line asset ids
+                        being requested and to extract geometry from the same
+                        file
+    downloadclips       Allows users to batch download clipped assets post
+                        computation using a directory path(Requires you to
+                        first activate and run geojson or json tool)
+    sort                Allows users to unzip downloaded files to new folder
+                        and sorts into images and metadata
+
+optional arguments:
+  -h, --help            show this help message and exit
+</code></pre>
+
+<h2 id="usage-examples">Usage examples</h2>
+<p>The tools have been designed to follow a sequential setup from activation, clip, download and even sort and includes steps that help resolve additional issues a user might face trying to download clipped area of interests instead of entire scenes.</p>
 <h3 id="planet-key">Planet Key</h3>
 <p>This tool basically asks you to input your Planet API Key using a password prompt this is then used for all subsequent tools</p>
-<p><img alt="planet_key" src="http://i.imgur.com/YwQGbi5.jpg" /></p>
+<pre><code>usage: pclip planetkey [-h]
+
+optional arguments:
+  -h, --help  show this help message and exit
+</code></pre>
+
 <p>If using on a private machine the Key is saved as a csv file for all future runs of the tool.</p>
 <h3 id="aoi-json">AOI JSON</h3>
 <p>The aoijson tab within the toolset allows you to create filters and structure your existing input file to that which can be used with Planet's API. The tool requires inputs with start and end date, along with cloud cover. You can choose from multiple input files types such as KML, Zipped Shapefile, GeoJSON, WKT or even Landsat Tiles based on PathRow numbers. The geo option asks you to select existing files which will be converted into formatted JSON file called aoi.json. If using WRS as an option just type in the 6 digit PathRow combination and it will create a json file for you.</p>
-<p><img alt="aoijson" src="http://i.imgur.com/UB6nlmu.jpg" /></p>
+<pre><code>usage: pclip aoijson [-h] [--start START] [--end END] [--cloud CLOUD]
+                     [--inputfile INPUTFILE] [--geo GEO] [--loc LOC]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --start START         Start date in YYYY-MM-DD?
+  --end END             End date in YYYY-MM-DD?
+  --cloud CLOUD         Maximum Cloud Cover(0-1) representing 0-100
+  --inputfile INPUTFILE
+                        Choose a kml/shapefile/geojson or WKT file for
+                        AOI(KML/SHP/GJSON/WKT) or WRS (6 digit RowPath
+                        Example: 023042)
+  --geo GEO             map.geojson/aoi.kml/aoi.shp/aoi.wkt file
+  --loc LOC             Location where aoi.json file is to be stored
+</code></pre>
+
+<p>As with the <a href="https://github.com/samapriya/Planet-GEE-Pipeline-CLI">Planet-GEE-Pipeline-CLI</a> the aoijson tool allows the user to bring any filetype of interest, which includes GEOJSON, WKT, KML or SHP file including but not limited to WRS rowpath setup and structures it to enable filtered query using Planet's data API. A simple setup would be</p>
+<p><code>pclip aoijson --start "2017-06-01" --end "2017-12-31" --cloud "0.15" --inputfile "GJSON" --geo "C:\planet\myarea.geojson" --loc "C:\planet"</code></p>
+<p>the output is always named as aoi.json.</p>
 <h3 id="activate-or-check-asset">Activate or Check Asset</h3>
-<p>The activatepl tab allows the users to either check or activate planet assets. This tool makes use of an existing json file sturctured for use within Planet API or the aoi.json file created earlier</p>
-<p><img alt="activatepl" src="http://i.imgur.com/nmK9gdb.gif" /></p>
-<h3 id="download-size">Download Size</h3>
-<p>The space tool allows the user to check the size of the activated assets before downloading while also estimating the available space on the local drive. The overall size and space is printed in MB and GB</p>
-<p><img alt="space" src="http://i.imgur.com/CzAYb0c.jpg" /></p>
-<h3 id="download-asset">Download Asset</h3>
-<p>The downloadpl tab allows the users to download assets that have been activated. </p>
-<p><img alt="downloadpl" src="http://i.imgur.com/8dvZtpp.gif" /></p>
-<h1 id="credits">Credits</h1>
-<p><a href="https://jetstream-cloud.org/">JetStream</a> A portion of the work is suported by JetStream Grant TG-GEO160014.</p>
-<p>Also supported by <a href="https://www.planet.com/markets/ambassador-signup/">Planet Labs Ambassador Program</a></p>
+<p>The activate tool allows the users to either check or activate planet assets. This tool makes use of an existing json file sturctured for use within Planet API or the aoi.json file created earlier. This is a necessary step since the clip API can only work with those ID(s) which have been activated. In the future the list ID tool will check for number of activated id and wait for all of them to be activated before generating an ID list.</p>
+<pre><code>usage: pclip activate [-h] [--aoi AOI] [--action ACTION] [--asst ASST]
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --aoi AOI        Choose aoi.json file created earlier
+  --action ACTION  choose between check/activate
+  --asst ASST      Choose between planet asset types (PSOrthoTile
+                   analytic/PSOrthoTile analytic_dn/PSOrthoTile
+                   visual/PSScene4Band analytic/PSScene4Band
+                   analytic_dn/PSScene3Band analytic/PSScene3Band
+                   analytic_dn/PSScene3Band visual/REOrthoTile
+                   analytic/REOrthoTile visual
+</code></pre>
+
+<p>An example setup for asset activation is the following</p>
+<p><code>pclip activate --aoi "C:\planet\aoi.json" --action "activate" --asst "PSOrthoTile analytic"</code></p>
+<h3 id="list-ids">List IDs</h3>
+<p>The next step is to list ID(s) that you have activated, this creates a temporary file containing the list of ID(s) which can be used to iteratively call the clips API. This is a modification of the activation function to use only the item id instead of item type and asset id and write to file for future use.</p>
+<pre><code>usage: pclip idlist [-h] [--aoi AOI] [--asset ASSET]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --aoi AOI      Input path to the structured json file from which we will
+                 generate the clips
+  --asset ASSET  Choose from asset type for example:&quot;PSOrthoTile
+                 analytic&quot;|&quot;REOrthoTile analytic&quot;
+</code></pre>
+
+<p>The example setup for this command is the following</p>
+<p><code>pclip idlist --aoi “C:\planet\aoi.json” --asset “PSOrthoTile analytic”</code></p>
+<h3 id="clipping-with-geojson">Clipping with GeoJSON</h3>
+<p>A geejson file can be used directly to clip and query the area of interest and then submit clip process. I added this is a functionality but want to make clear that this does not take into consideration any other filters such as cloud cover or start and end date, and hence should be used only when you do not need to apply any filter.</p>
+<pre><code>usage: pclip geojsonc [-h] [--path PATH] [--item ITEM] [--asset ASSET]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --path PATH    Path to the geojson file including filename (Example:
+                 C:\users ile.geojson)
+  --item ITEM    Choose from item type for example:&quot;PSOrthoTile&quot;,&quot;REOrthoTile&quot;
+  --asset ASSET  Choose from asset type for example: &quot;visual&quot;,&quot;analytic&quot;
+  ```
+ A simple setup for the JSON tool is the following
+
+```pclip geojsonc --path “C:\planet\aoi.geojson” --item “PSOrthoTile” --asset “analytic&quot;```
+
+### Clipping with JSON
+This is the preferred style of submitting the clip requests using the IDlist we generated earlier. This is already structured before even activating assets and includes the additional filters you might have used for selecting the images.
+</code></pre>
+
+<p>usage: pclip jsonc [-h] [--path PATH] [--item ITEM] [--asset ASSET]</p>
+<p>optional arguments:
+  -h, --help     show this help message and exit
+  --path PATH    Path to the json file including filename (Example: C:\users
+                 ile.json)
+  --item ITEM    Choose from item type for example:"PSOrthoTile","REOrthoTile"
+  --asset ASSET  Choose from asset type for example: "visual","analytic"
+  ```
+A simple setup for the JSON tool is the following</p>
+<p><code>pclip jsonc --path “C:\planet\aoi.json” --item “PSOrthoTile” --asset “analytic"</code></p>
+<h3 id="downloading-clipped-imagery">Downloading Clipped Imagery</h3>
+<p>The last step includes providing a location where the clipped imagery can be downloaded. This includes the zip files that are generated from the earlier step and include a download token that expires over time. This batch downloads the clipped zip files to destination directory</p>
+<pre><code>usage: pclip downloadclips [-h] [--dir DIR]
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --dir DIR   Output directory to save the assets. All files are zipped and
+              include metadata
+</code></pre>
+
+<p>A simple setup includes just the location to the download directory for the zipped &amp; clipped files to be downloaded</p>
+<pre><code>pclip downloadclips --dir “C:\planet\zipped&quot;
+</code></pre>
+
+<h3 id="sorting">Sorting</h3>
+<p>As an additional measure and because it makes arranging and handling datasets easily, this setup comes completed with a sort tool. If a output directory is provided for the unzipped files, the tool unzips all files, moves the images and metadata to seperate directories and then deletes the original zipped files to save space. </p>
+<pre><code>usage: pclip sort [-h] [--zipped ZIPPED] [--unzipped UNZIPPED]
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --zipped ZIPPED      Folder containing downloaded clipped files which are
+                       zipped
+  --unzipped UNZIPPED  Folder where you want your files to be unzipped and
+                       sorted
+</code></pre>
+
+<p>A simple would be the following (Images and metadata are sorted into an image and metadata folder inside the unzipped files folder)</p>
+<pre><code>pclip sort --zipped “C:\planet\zipped” --unzipped “C:\planet\unzipped”
+</code></pre>
                 
                   
                 
@@ -675,7 +848,7 @@ sudo apt-get install python-wxgtk3.0
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../slack_notifier_cli_addon/" title="Slack Notifier CLI Addon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -684,19 +857,19 @@ sudo apt-get install python-wxgtk3.0
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Slack Notifier CLI Addon
+                Introduction
               </span>
             </div>
           </a>
         
         
-          <a href="../gee_asset_manager_addon/" title="Google Earth Engine Asset Manager Addon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../slack_notifier_cli_addon/" title="Slack Notifier CLI Addon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Google Earth Engine Asset Manager Addon
+                Slack Notifier CLI Addon
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

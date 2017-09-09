@@ -10,7 +10,7 @@
         <meta name="description" content="Description of current projects on Github and updates">
       
       
-        <link rel="canonical" href="https://github.com/samapriya/projects/jetstream_unofficial_cli/">
+        <link rel="canonical" href="https://github.com/samapriya/projects/slack_notifier_cli_addon/">
       
       
         <meta name="author" content="Samapriya Roy">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Jetstream Unofficial Addon - Samapriya Roy</title>
+        <title>Slack Notifier CLI Addon - Samapriya Roy</title>
       
     
     
@@ -87,7 +87,7 @@
                 </span>
               
             
-            Jetstream Unofficial Addon
+            Slack Notifier CLI Addon
           
         </span>
       </div>
@@ -261,11 +261,95 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../slack_notifier_cli_addon/" title="Slack Notifier CLI Addon" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Slack Notifier CLI Addon
+      </label>
+    
+    <a href="./" title="Slack Notifier CLI Addon" class="md-nav__link md-nav__link--active">
       Slack Notifier CLI Addon
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting started" class="md-nav__link">
+    Getting started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slack-credential" title="Slack Credential" class="md-nav__link">
+    Slack Credential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-bot-credential" title="Slack-Bot Credential" class="md-nav__link">
+    Slack-Bot Credential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-messages" title="Slack Messages" class="md-nav__link">
+    Slack Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-message-with-attachment" title="Slack Message with Attachment" class="md-nav__link">
+    Slack Message with Attachment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-delete-all" title="Slack Delete All" class="md-nav__link">
+    Slack Delete All
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -357,88 +441,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Jetstream Unofficial Addon
-      </label>
-    
-    <a href="./" title="Jetstream Unofficial Addon" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../jetstream_unofficial_cli/" title="Jetstream Unofficial Addon" class="md-nav__link">
       Jetstream Unofficial Addon
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
-    Table of contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" title="Getting started" class="md-nav__link">
-    Getting started
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#save-api-password-as-credential" title="Save API Password as Credential" class="md-nav__link">
-    Save API Password as Credential
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#query-current-instances" title="Query Current Instances" class="md-nav__link">
-    Query Current Instances
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#query-current-volumes" title="Query Current Volumes" class="md-nav__link">
-    Query Current Volumes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perform-instance-actions" title="Perform Instance Actions" class="md-nav__link">
-    Perform Instance Actions
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -515,39 +522,46 @@
     Getting started
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#save-api-password-as-credential" title="Save API Password as Credential" class="md-nav__link">
-    Save API Password as Credential
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-current-instances" title="Query Current Instances" class="md-nav__link">
-    Query Current Instances
+  <a href="#slack-credential" title="Slack Credential" class="md-nav__link">
+    Slack Credential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-bot-credential" title="Slack-Bot Credential" class="md-nav__link">
+    Slack-Bot Credential
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-messages" title="Slack Messages" class="md-nav__link">
+    Slack Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-message-with-attachment" title="Slack Message with Attachment" class="md-nav__link">
+    Slack Message with Attachment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slack-delete-all" title="Slack Delete All" class="md-nav__link">
+    Slack Delete All
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#query-current-volumes" title="Query Current Volumes" class="md-nav__link">
-    Query Current Volumes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#perform-instance-actions" title="Perform Instance Actions" class="md-nav__link">
-    Perform Instance Actions
-  </a>
   
 </li>
       
@@ -566,123 +580,100 @@
               
                 
                 
-                <h1 id="jetstream-unofficial-addon-for-atmosphere-vms">Jetstream Unofficial Addon for Atmosphere VM(s)</h1>
-<p><a href="https://doi.org/10.5281/zenodo.844018"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.844018.svg" /></a>
-<a href="https://jetstream-cloud.org/"><img alt="Jetstream" src="https://img.shields.io/badge/SupportedBy%3A-JetStream-brightgreen.svg" /></a></p>
-<p>Jetstream provides researchers and students with a unique approach to cloud computing and data analysis on demand. Moving away from a job submission model which is more pervasice on High Performance Cluster computing this allows users to create user-friendly installs of “virtual machines” which can then be custom installed with softwares and packages and even imaged further to make science replicable. The system in theory also allows a BYoOS (Bring your own Operating System) designed to further allow more flexibility while sharing the backbone of high performance compute and cloud storage infrastructure. The idea of imaging a system allows the user to not only share their data or analysis but their entire setup that allows them to run the analysis making it a plug and play model in terms of research replication and transference. As the NSF project proceeds further it allows users to apply for grants or allocation time on the machines and indeed renew these free of cost for researchers and students. </p>
-<p>For my work looking at developing a Satellite Imagery Input Output (IO) pipeline I was allocated a Jetstream grant and while using a couple of these systems I always thought it would be easier to query number of instances and volumes running on my account, my burn rate and left over allocation over sometime. And something useful was the possibility to perform system actions such as shutdown(stop), restart, start, reboot among others programatically. It is with this idea that I approach the API backend at JetStream and built just a few tools to allows users to perform these actions without the need to log into their web browsers and allows user to call upon instance actions through a rough command line interface (CLI).</p>
-<p>I would love to thank Steve Gregory who is getting the Official API ready for release and Jeremy Fischer who have helped me in more ways and allowed me to keep asking questions and learn from them to build the unofficial api for Jetstream.</p>
-<p>The Jetstream's mission and funding is supported by NSF and any and all citations are useful so please make sure to cite and citation information can be found at the end of this readme or use the <a href="https://jetstream-cloud.org/research/citing-jetstream.php">link</a></p>
-<p><em>Note: I have used this on the Jetstream-IU system but it should work on the TACC end as well and the information I decided to show per instance is based on what I used, there are much more information generated but the tool prints a subset</em></p>
-<p><img alt="CLI" src="http://i.imgur.com/52eJzp6.gif" /></p>
+                <h1 id="slack-notifier-cli-addon">Slack Notifier-CLI Addon</h1>
+<p><a href="https://zenodo.org/badge/latestdoi/102524939"><img alt="DOI" src="https://zenodo.org/badge/102524939.svg" /></a></p>
+<p>For those working with team collaborations and notifications slack is a quick alternative to group emails and chats. The need for a notification tool was also met with the use of the API which could be neatly tied up in clients. This CLI add-on was developed simply to function as an additional tool which can reside in an application folder and which can be called upon within a program and act as a notifier for events and updates. The tool combines simple methods in building channels and application bots and uses backends to send messages, files and to handle message history. The notifier was based on a comparison between available methods in tools such as pushbullet, pushover among a few for being able to have cross platform compatibility. Though this was designed as a means for getting process update for specific tools this CLI is essentially a plug and play into any system which can talk and pass arguments to this tool. In time additional and more refined implementation control might be included to handle specific functions.</p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
 <li><a href="#getting-started">Getting started</a><ul>
-<li><a href="#save-api-password-as-credential">Save API Password as Credential</a></li>
-<li><a href="#query-current-instances">Query Current Instances</a></li>
-<li><a href="#query-current-volumes">Query Current Volumes</a></li>
-<li><a href="#perform-instance-actions">Perform Instance Actions</a></li>
+<li><a href="#slack-credential">Slack Credential</a></li>
+<li><a href="#slack-bot-credential">Slack-Bot Credential</a></li>
+<li><a href="#slack-messages">Slack Messages</a></li>
+<li><a href="#slack-message-with-attachment">Slack Message with Attachment</a></li>
+<li><a href="#slack-delete-all">Slack Delete All</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="getting-started">Getting started</h2>
-<p>To get started you need an XSEDE account of a Jetstream Rapid Access Account and you can create one using instructions <a href="https://iujetstream.atlassian.net/wiki/display/JWT/Get+a+Jetstream+Rapid+Access+account">here</a>. Once into the system you will still need an allocation and the wiki page setup by the project explains these along with everything you can do step by step <a href="https://iujetstream.atlassian.net/wiki/spaces/JWT/overview">here</a>. Once you have a project allocation and create some instances and volumes you can query and perform instance actions.</p>
-<p>Just browse to the folder and perform a <code>python jetstream.py -h</code>:</p>
-<pre><code>usage: jetstream.py [-h] { ,jskey,instance,volume,action} ...
+<p>To get started you need a Slack account and you can create one <a href="https://slack.com/create">here</a>. Once you create the slack team you can further create an application and a bot within your team. This will allow you to get two API keys that you need for your tool. To access both these API tokens <a href="https://api.slack.com">go to</a>. On the features, tab should be an option called OAuth &amp; Permissions and should provide you with <em>OAuth Access Token</em> and <em>Bot User OAuth Access Token</em>. Note that the bot can only post in those channels where you have given it permission. If you add the bot to multiple channels you can specify the channel when posting messages or files.</p>
+<p>Just browse to the folder and perform <code>python slack_addon.py -h</code>:</p>
+<pre><code>usage: slack_addon.py [-h] { ,smain,sbot,botupdate,botfile,slackdelete} ...
 
-JetStream API Unofficial
+Slack API Addon
 
 positional arguments:
-  { ,jskey,instance,volume,action}
+  { ,smain,sbot,botupdate,botfile,slackdelete}
                         -------------------------------------------
-                        -----Choose from JetStream Tools Below-----
+                        -----Choose from Slack Tools Below-----
                         -------------------------------------------
-    jskey               Allows you to save your JetStream API Password
-    instance            Allows users to print out all instance information
-    volume              Allows users to print out all volume information
-    action              Allows user to start, suspend,resume,reboot instance
+    smain               Allows you to save your Slack Main API Token
+    sbot                Allows you to save your Slack Bot API Token
+    botupdate           Allows your bot to post messages on slack channel
+    botfile             Allows you to post a file along with comments
+    slackdelete         Allows users to delete all messages and files posted
+                        by bots
 
 optional arguments:
   -h, --help            show this help message and exit
-
 </code></pre>
 
-<h2 id="save-api-password-as-credential">Save API Password as Credential</h2>
-<p>This tool allows the user to save the credential or password file into <code>users/.config/jetstream</code> making sure that they are user specific and are not shared on a system resource or location. This password is not your XSEDE or Jetstream Rapid Access account password but a API password which has to be requested atleast for now. It uses a getpass implementation and write the password as a csv and the other tools first tries to read this and if not present asks for your password.</p>
-<pre><code>usage: jetstream.py jskey [-h]
+<h3 id="slack-credential">Slack Credential</h3>
+<p>This tool allows the user to save slack credential(OAuth Access Token) into <code>users/.config/slackkey</code> making sure that they are user specific and are not shared on a system resource or location. It uses a getpass implementation and writes the password as a CSV and the other tools first try to read this and if not present asks for your password.</p>
+<pre><code>usage: slack_addon.py smain [-h]
 
 optional arguments:
   -h, --help  show this help message and exit
-
 </code></pre>
 
-<h3 id="query-current-instances">Query Current Instances</h3>
-<p>As the name stated this allows the user to query instances related to your account. This queries all instances for now and prints certain key parameters(these are a subset that I selected for my use) but can be easily modified in the code to print other information.</p>
-<pre><code>usage: jetstream.py instance [-h] [--username USERNAME] [--password PASSWORD]
+<h3 id="slack-bot-credential">Slack-Bot Credential</h3>
+<p>This tool allows the user to save slack bot credential(Bot User OAuth Access Token) into <code>users/.config/slackkey</code> making sure that they are user specific and are not shared on a system resource or location. It uses a getpass implementation and writes the password as a CSV and the other tools first try to read this and if not present asks for your password.</p>
+<pre><code>usage: slack_addon.py sbot [-h]
+
+optional arguments:
+  -h, --help  show this help message and exit
+</code></pre>
+
+<h3 id="slack-messages">Slack Messages</h3>
+<p>The slack messaging application is the primary tool which uses the <a href="https://pypi.python.org/pypi/slacker/0.9.60">slacker</a> backend and allows the user to send messages as a bot to specific channel(s). The messaging service reads your Bot User OAuth Access Token and allows you to send messages to all channels where the bot has been added or has permission to post. If you do not specify the channel the bot posts to the general channel.</p>
+<pre><code>usage: slack_addon.py botupdate [-h] [--channel CHANNEL] [--msg MSG]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --channel CHANNEL  Slack Bot update channel
+  --msg MSG          Slack Bot update message
+</code></pre>
+
+<p>Incase you have already saved your password sending a message is as simple as </p>
+<pre><code>python slack_addon.py --channel &quot;#general&quot; --message &quot;Hello world&quot;
+</code></pre>
+
+<p>The application can simple be added by a call command with any process running as a system and the bot can update you about system processes, about usage, about application status and file sizes. The possibilities are endless.</p>
+<h3 id="slack-message-with-attachment">Slack Message with Attachment</h3>
+<p>One of the most interesting applications for me was to check that not only can I sent system and application updates but I could send snapshots or process outputs such as excel files and zip files and even error logs as needed. This tool allows the slack bot to not only send a message but only to include a file with the message. The filepath points to the location of the file, the fname allows you to name the file accordingly and the cmmt option is used to add a coment of message along with the file. The channel option allows you to choose a specific channel you want to post the message and as earlier it will post to general channel. </p>
+<pre><code>usage: slack_addon.py botfile [-h] [--channel CHANNEL] [--filepath FILEPATH]
+                              [--cmmt CMMT] [--fname FNAME]
 
 optional arguments:
   -h, --help           show this help message and exit
-  --username USERNAME  Jetstream API username
-  --password PASSWORD  Jetstream API password: &quot;Optional if you already saved
-                       jetstream key&quot;
+  --channel CHANNEL    Slack Bot channel
+  --filepath FILEPATH  Slack Bot file path to upload
+  --cmmt CMMT          Slack Bot file comment
+  --fname FNAME        Slack Bot filename
 </code></pre>
 
 <p>Incase you have already saved your password a setup would be simply</p>
-<pre><code>python jetstream.py instance --username &quot;johndoe&quot;
+<pre><code>python slack_addon.py --channel &quot;#general&quot; --filepath &quot;/users/myfilepath.csv&quot; --cmmt &quot;Check the error logs&quot; --fname &quot;errorlog&quot;
 </code></pre>
 
-<p>if not</p>
-<pre><code>python jetstream.py instance --username &quot;johndoe&quot; --password &quot;pass&quot;
-</code></pre>
-
-<h2 id="query-current-volumes">Query Current Volumes</h2>
-<p>The current volume options queries current volumes on your project. Note that the current info does not tell you which instance a volume is attached to which might be a nice endpoint readout to have.</p>
-<pre><code>usage: jetstream.py volume [-h] [--username USERNAME] [--password PASSWORD]
+<h3 id="slack-delete-all">Slack Delete All</h3>
+<p>One of the current non existent methods within Slack is the capability to delete all messages. This is built using a backend <a href="https://pypi.python.org/pypi/slack-cleaner/0.3.0">cli tool</a> to delete all messages and files if needed and I integrated that in the current CLI. The current tool is primarily related to deleting all messages and files for cleaning up a channel as needed. The tool uses your main slack channel API token and uses that to delete all messages from all users but can be modified to delete messages from specific bots if needed. For now the tool deletes all messages and files in the general channel.</p>
+<pre><code>usage: slack_addon.py slackdelete [-h]
 
 optional arguments:
-  -h, --help           show this help message and exit
-  --username USERNAME  Jetstream API username
-  --password PASSWORD  Jetstream API password: &quot;Optional if you already saved
-                       jetstream key&quot;
+  -h, --help  show this help message and exit
 </code></pre>
 
-<p>Incase you have already saved your password a setup would be simply</p>
-<pre><code>python jetstream.py volume --username &quot;johndoe&quot;
-</code></pre>
-
-<p>if not</p>
-<pre><code>python jetstream.py volume --username &quot;johndoe&quot; --password &quot;pass&quot;
-</code></pre>
-
-<h2 id="perform-instance-actions">Perform Instance Actions</h2>
-<p>This is perhaps one of the most important aspect of building this tool, the idea was to get a read out or a email message when a system has been idle for sometime and then auto shutdown or initiate a shutdown remotely. This command allows you to choose the instance you want to perform an instance action using the instance ID mentioned on your instance profile page. The next thing you need to know is what kind of action you want to perform. There are certain things that will create a conflict, for example: If you are trying to shutdown an already shutoff system or start an already active system. In that case it will print out a conflict message.</p>
-<pre><code>usage: jetstream.py action [-h] [--username USERNAME] [--password PASSWORD]
-                           [--id ID] [--action ACTION]
-
-optional arguments:
-  -h, --help           show this help message and exit
-  --username USERNAME  Jetstream API username
-  --password PASSWORD  Jetstream API password: &quot;Optional if you already saved
-                       jetstream key&quot;
-  --id ID              Jetstream Instance ID on your Instance Detail Page
-  --action ACTION      Jetstream Instance Action,
-                       &quot;start|stop|suspend|resume|reboot&quot;
-</code></pre>
-
-<p>Incase you have already saved your password a setup would be simply</p>
-<pre><code>python jetstream.py action --username &quot;johndoe&quot; --id &quot;00000&quot; --action &quot;start&quot;
-</code></pre>
-
-<p>if not </p>
-<pre><code>python jetstream.py action --username &quot;johndoe&quot; --password &quot;pass&quot; --id &quot;00000&quot; --action &quot;start&quot;
-</code></pre>
-
-<p>I would like to thank my grant from JetStream TG-GEO160014. You can cite this tool as </p>
-<p><strong>Samapriya Roy. (2017, August 16). samapriya/jetstream-unofficial-addon: jetstream-unofficial-addon. Zenodo. http://doi.org/10.5281/zenodo.844018</strong></p>
-<p>And I would like to include Jetstream citations for others to use</p>
-<p><strong>Stewart, C.A., Cockerill, T.M., Foster, I., Hancock, D., Merchant, N., Skidmore, E., Stanzione, D., Taylor, J., Tuecke, S., Turner, G., Vaughn, M., and Gaffney, N.I., Jetstream: a self-provisioned, scalable science and engineering cloud environment. 2015, In Proceedings of the 2015 XSEDE Conference: Scientific Advancements Enabled by Enhanced Cyberinfrastructure. St. Louis, Missouri.  ACM: 2792774.  p. 1-8. http://dx.doi.org/10.1145/2792745.2792774</strong></p>
-<p>and</p>
-<p><strong>John Towns, Timothy Cockerill, Maytal Dahan, Ian Foster, Kelly Gaither, Andrew Grimshaw, Victor Hazlewood, Scott Lathrop, Dave Lifka, Gregory D. Peterson, Ralph Roskies, J. Ray Scott, Nancy Wilkins-Diehr, "XSEDE: Accelerating Scientific Discovery", Computing in Science &amp; Engineering, vol.16, no. 5, pp. 62-74, Sept.-Oct. 2014, doi:10.1109/MCSE.2014.80</strong></p>
+<p>to use this tool simple type <code>python slack_addon.py slackdelete</code></p>
                 
                   
                 
@@ -701,7 +692,7 @@ optional arguments:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../arcticdem_download/" title="ArcticDEM-Batch-Pipeline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../clip_ship_planet_cli/" title="Clip Ship Planet CLI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -710,19 +701,19 @@ optional arguments:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                ArcticDEM-Batch-Pipeline
+                Clip Ship Planet CLI
               </span>
             </div>
           </a>
         
         
-          <a href="../../release-notes/" title="Release notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../planet_pipeline_gui/" title="Planet Bulk Data Downloader GUI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Release notes
+                Planet Bulk Data Downloader GUI
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
