@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
     
     
       
@@ -26,12 +26,12 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-b6a6d08807.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -69,10 +69,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="https://github.com/samapriya" title="Samapriya Roy" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="https://github.com/samapriya" title="Samapriya Roy" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -101,7 +102,7 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -158,9 +159,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Samapriya Roy
   </label>
   
@@ -357,6 +360,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
   
 </li>
       
@@ -621,6 +631,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -637,7 +654,7 @@
                 
                 
                 <h1 id="clip-ship-planet-cli-addon">Clip Ship Planet CLI addon</h1>
-<p><a href="https://doi.org/10.5281/zenodo.888102"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.888102.svg" /></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.892682"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.892682.svg" /></a></p>
 <p>Planet's Clip API was a compute API designed to allowed users to clip the images to their area of interest. This would save them time in preprocessing and also allow the user to save on their area quota which might have restrictions. Based on Planet's Education and Research Program this quota is set at 10,000 square kilometers a month, which means saving up on quota is very useful. The discussion also led to an important clarification that users are in fact charged only for the area downloaded post clip if using the clip operation and hence this tool. This tool takes a sequential approach from activation to generating a clip request for multiple images activated and then processing the download tokens to actually download the clipped image files. The tool also consists of a sort function which allows the user to extract the files and sort them by type and deleting the original files to save on space.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the Clip-Ship-Planet-CLI you can simply perform the following action with Linux(Tested on Ubuntu 16):</p>
@@ -709,7 +726,7 @@ optional arguments:
 </code></pre>
 
 <h2 id="usage-examples">Usage examples</h2>
-<p>The tools have been designed to follow a sequential setup from activation, clip, download and even sort and includes steps that help resolve additional issues a user might face trying to download clipped area of interests instead of entire scenes.</p>
+<p>The tools have been designed to follow a sequential setup from activation, clip, download and even sort and includes steps that help resolve additional issues a user might face trying to download clipped area of interests instead of entire scenes. The system will ask you to enter your API key before the CLI starts(this will prompt you only once to change API key use the Planet Key tool).</p>
 <h3 id="planet-key">Planet Key</h3>
 <p>This tool basically asks you to input your Planet API Key using a password prompt this is then used for all subsequent tools</p>
 <pre><code>usage: pclip planetkey [-h]
@@ -748,7 +765,7 @@ optional arguments:
   -h, --help       show this help message and exit
   --aoi AOI        Choose aoi.json file created earlier
   --action ACTION  choose between check/activate
-  --asst ASST      Choose between planet asset types (PSOrthoTile
+  --asset ASST      Choose between planet asset types (PSOrthoTile
                    analytic/PSOrthoTile analytic_dn/PSOrthoTile
                    visual/PSScene4Band analytic/PSScene4Band
                    analytic_dn/PSScene3Band analytic/PSScene3Band
@@ -757,7 +774,7 @@ optional arguments:
 </code></pre>
 
 <p>An example setup for asset activation is the following</p>
-<p><code>pclip activate --aoi "C:\planet\aoi.json" --action "activate" --asst "PSOrthoTile analytic"</code></p>
+<p><code>pclip activate --aoi "C:\planet\aoi.json" --action "activate" --asset "PSOrthoTile analytic"</code></p>
 <h3 id="list-ids">List IDs</h3>
 <p>The next step is to list ID(s) that you have activated, this creates a temporary file containing the list of ID(s) which can be used to iteratively call the clips API. This is a modification of the activation function to use only the item id instead of item type and asset id and write to file for future use.</p>
 <pre><code>usage: pclip idlist [-h] [--aoi AOI] [--asset ASSET]
@@ -830,6 +847,18 @@ optional arguments:
 <p>A simple would be the following (Images and metadata are sorted into an image and metadata folder inside the unzipped files folder)</p>
 <pre><code>pclip sort --zipped “C:\planet\zipped” --unzipped “C:\planet\unzipped”
 </code></pre>
+
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li>The Clip function now handles error codes if the post response code is not 202(accepted for processing) then the error code and item and asset type is printed.</li>
+<li>Handles single time input API Key, this is needed only once to start the program</li>
+<li>Fixed issue with base metadata folder during sort</li>
+<li>Updated asset argument for asset activation to match styles</li>
+<li>Updated Requirements.txt to include pyshp</li>
+<li>Fixed subprocess shell error, for now shell=True</li>
+<li>Tested on Ubuntu 16.04 and now handles permissions problem</li>
+<li>Temporary files now written to config folders to avoid admin permission</li>
+</ul>
                 
                   
                 
@@ -915,7 +944,7 @@ optional arguments:
       
     </div>
     
-      <script src="../../assets/javascripts/application-1d6ee6ee6c.js"></script>
+      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>
