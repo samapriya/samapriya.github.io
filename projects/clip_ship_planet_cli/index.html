@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
     
     
       
@@ -29,7 +29,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-b6a6d08807.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
       
@@ -654,7 +654,7 @@
                 
                 
                 <h1 id="clip-ship-planet-cli-addon">Clip Ship Planet CLI addon</h1>
-<p><a href="https://doi.org/10.5281/zenodo.996373"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.996373.svg" /></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.998031"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.998031.svg" /></a></p>
 <p>Planet's Clip API was a compute API designed to allowed users to clip the images to their area of interest. This would save them time in preprocessing and also allow the user to save on their area quota which might have restrictions. Based on Planet's Education and Research Program this quota is set at 10,000 square kilometers a month, which means saving up on quota is very useful. The discussion also led to an important clarification that users are in fact charged only for the area downloaded post clip if using the clip operation and hence this tool. This tool takes a sequential approach from activation to generating a clip request for multiple images activated and then processing the download tokens to actually download the clipped image files. The tool also consists of a sort function which allows the user to extract the files and sort them by type and deleting the original files to save on space.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the Clip-Ship-Planet-CLI you can simply perform the following action with Linux(Tested on Ubuntu 16):</p>
@@ -850,6 +850,8 @@ optional arguments:
 
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li>Includes required packages list within installer</li>
+<li>Robust GEOJSON Parsing </li>
 <li>Fixed issues with processing visual asset types</li>
 <li>The Clip function now handles error codes if the post response code is not 202(accepted for processing) then the error code and item and asset type is printed.</li>
 <li>Handles single time input API Key, this is needed only once to start the program</li>

@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
     
     
       
@@ -29,7 +29,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-b6a6d08807.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
       
@@ -373,6 +373,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create" title="Create" class="md-nav__link">
+    Create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image" title="Upload a directory with images to your myfolder/mycollection and associate properties with each image:" class="md-nav__link">
     Upload a directory with images to your myfolder/mycollection and associate properties with each image:
   </a>
@@ -457,13 +464,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#convert-to-fusion-table" title="Convert to Fusion Table" class="md-nav__link">
-    Convert to Fusion Table
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#cleanup-utility" title="Cleanup Utility" class="md-nav__link">
     Cleanup Utility
   </a>
@@ -473,6 +473,13 @@
           <li class="md-nav__item">
   <a href="#cancel-all-tasks" title="Cancel all tasks" class="md-nav__link">
     Cancel all tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
   </a>
   
 </li>
@@ -681,6 +688,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create" title="Create" class="md-nav__link">
+    Create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image" title="Upload a directory with images to your myfolder/mycollection and associate properties with each image:" class="md-nav__link">
     Upload a directory with images to your myfolder/mycollection and associate properties with each image:
   </a>
@@ -765,13 +779,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#convert-to-fusion-table" title="Convert to Fusion Table" class="md-nav__link">
-    Convert to Fusion Table
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#cleanup-utility" title="Cleanup Utility" class="md-nav__link">
     Cleanup Utility
   </a>
@@ -781,6 +788,13 @@
           <li class="md-nav__item">
   <a href="#cancel-all-tasks" title="Cancel all tasks" class="md-nav__link">
     Cancel all tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
   </a>
   
 </li>
@@ -806,7 +820,7 @@
                 
                 
                 <h1 id="google-earth-engine-batch-asset-manager-with-addons">Google Earth Engine Batch Asset Manager with Addons</h1>
-<p><a href="https://zenodo.org/badge/latestdoi/87708514"><img alt="DOI" src="https://zenodo.org/badge/87708514.svg" /></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.998030"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.998030.svg" /></a></p>
 <p>Google Earth Engine Batch Asset Manager with Addons is an extension of the one developed by Lukasz <a href="https://github.com/tracek/gee_asset_manager">here</a> and additional tools were added to include functionality for moving assets, conversion of objects to fusion table, cleaning folders, querying tasks. The ambition is apart from helping user with batch actions on assets along with interacting and extending capabilities of existing GEE CLI. It is developed case by case basis to include more features in the future as it becomes available or as need arises. tab.</p>
 <p><img alt="CLI" src="http://i.imgur.com/8Cvh3XY.gif" /></p>
 <h2 id="table-of-contents">Table of contents</h2>
@@ -819,6 +833,7 @@
 </li>
 <li><a href="#usage-examples">Usage examples</a><ul>
 <li><a href="#ee-user">EE User</a></li>
+<li><a href="#create">Create</a></li>
 <li><a href="#upload-a-directory-with-images-and-associate-properties-with-each-image">Upload a directory with images and associate properties with each image:</a></li>
 <li><a href="#upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination">Upload a directory with images with specific NoData value to a selected destination:</a></li>
 <li><a href="#asset-list">Asset List</a></li>
@@ -830,21 +845,13 @@
 <li><a href="#assets-copy">Assets Copy</a></li>
 <li><a href="#assets-access">Assets Access</a></li>
 <li><a href="#set-collection-property">Set Collection Property</a></li>
-<li><a href="#convert-to-fusion-table">Convert to Fusion Table</a></li>
 <li><a href="#cleanup-utility">Cleanup Utility</a></li>
 <li><a href="#cancel-all-tasks">Cancel all tasks</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="installation">Installation</h2>
-<p>We assume Earth Engine Python API is installed and EE authorised as desribed <a href="https://developers.google.com/earth-engine/python_install">here</a>. This toolbox also uses some functionality from GDAL
-For installing GDAL in Ubuntu</p>
-<pre><code>sudo add-apt-repository ppa:ubuntugis/ppa &amp;&amp; sudo apt-get update
-sudo apt-get install gdal-bin
-</code></pre>
-
-<p>For Windows I found this <a href="https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows">guide</a> from UCLA</p>
-<p>To install toolbox:</p>
+<p>We assume Earth Engine Python API is installed and EE authorised as desribed <a href="https://developers.google.com/earth-engine/python_install">here</a>. To install:</p>
 <pre><code>git clone https://github.com/samapriya/gee_asset_manager_addon
 cd gee_asset_manager &amp;&amp; pip install .
 </code></pre>
@@ -861,11 +868,17 @@ sudo python setup.py develop or sudo python setup.py install
 
 <h2 id="getting-started">Getting started</h2>
 <p>As usual, to print help:</p>
-<pre><code>Google Earth Engine Batch Asset Manager with Addons
+<pre><code>usage: geeadd.py [-h]
+                 {ee_user,create,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
+                 ...
+
+Google Earth Engine Batch Asset Manager with Addons
 
 positional arguments:
-  {ee_user,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,convert2ft,cleanout,cancel}
+  {ee_user,create,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
     ee_user             Allows you to associate/change GEE account to system
+    create              Allows the user to create an asset collection or
+                        folder in Google Earth Engine
     upload              Batch Asset Uploader.
     lst                 List assets in a folder/collection or write as text
                         file
@@ -884,8 +897,6 @@ positional arguments:
                         &quot;folder&quot; --asset &quot;users/john/doe&quot; --user
                         &quot;jimmy@doe.com:R&quot;
     collprop            Sets Overall Properties for Image Collection
-    convert2ft          Uploads a given feature collection to Google Fusion
-                        Table.
     cleanout            Clear folders with datasets from earlier downloaded
     cancel              Cancel all running tasks
 
@@ -987,6 +998,17 @@ Optional named arguments:
 <h2 id="usage-examples">Usage examples</h2>
 <h3 id="ee-user">EE User</h3>
 <p>This tool is designed to allow different users to change earth engine authentication credentials. The tool invokes the authentication call and copies the authentication key verification website to the clipboard which can then be pasted onto a browser and the generated key can be pasted back</p>
+<h3 id="create">Create</h3>
+<p>This tool allows you to create a collection or folder in your earth engine root directory. The tool uses the system cli to achieve this and this has been included so as to reduce the need to switch between multiple tools and CLI.</p>
+<pre><code>usage: ppipe.py create [-h] --typ TYP --path PATH
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --typ TYP    Specify type: collection or folder
+  --path PATH  This is the path for the earth engine asset to be created full
+               path is needsed eg: users/johndoe/collection
+</code></pre>
+
 <h3 id="upload-a-directory-with-images-to-your-myfoldermycollection-and-associate-properties-with-each-image">Upload a directory with images to your myfolder/mycollection and associate properties with each image:</h3>
 <pre><code>geeadd upload -u johndoe@gmail.com --source path_to_directory_with_tif -m path_to_metadata.csv --dest users/johndoe/myfolder/myponycollection
 </code></pre>
@@ -1110,19 +1132,6 @@ optional arguments:
                tem:tags=tags&quot;/&quot;system:title=title
 </code></pre>
 
-<h3 id="convert-to-fusion-table">Convert to Fusion Table</h3>
-<p>Once validated with gdal and google fusion table it can be used to convert any geoObject to google fusion table. Forked and contributed by Gennadii <a href="https://github.com/gena/ogr2ft">here</a>. The scripts can be used only with a specific google account</p>
-<pre><code>usage: geeadd.py convert2ft [-h] --i I --o O [--add_missing]
-
-optional arguments:
-  -h, --help     show this help message and exit
-  --i I          input feature source (KML, SHP, SpatiLite, etc.)
-  --o O          output Fusion Table name
-  --add_missing  add missing features from the last inserted feature index
-
-geeadd.py convert2ft --i &quot;./aoi.kml&quot; --o &quot;converted_aoi&quot;
-</code></pre>
-
 <h3 id="cleanup-utility">Cleanup Utility</h3>
 <p>This script is used to clean folders once all processes have been completed. In short this is a function to clear folder on local machine.</p>
 <pre><code>usage: geeadd.py cleanout [-h] [--dirpath DIRPATH]
@@ -1144,6 +1153,11 @@ usage: geeadd.py cancel [-h]
 optional arguments:
   -h, --help  show this help message and exit
 </code></pre>
+
+<h3 id="changelog">Changelog</h3>
+<ul>
+<li>Updated Parser and general improvements</li>
+</ul>
                 
                   
                 
