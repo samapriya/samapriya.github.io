@@ -922,12 +922,12 @@
         }, 
         {
             "location": "/release-notes/", 
-            "text": "Release notes\n\n\n\n\n\n\n\n\nProject Name\n\n\nDigital Object Identification Number(DOI)\n\n\nRelease\n\n\n\n\n\n\n\n\n\n\nClip-Ship-Planet-CLI\n\n\n\n\n0.1.8\n\n\n\n\n\n\nSlack-Notifier-CLI-Addon]\n\n\n\n\n0.1.0\n\n\n\n\n\n\nPlanet-GEE-Pipeline-CLI\n\n\n\n\n0.1.8\n\n\n\n\n\n\nPlanet-GEE-Pipeline-GUI\n\n\n\n\n0.1.4\n\n\n\n\n\n\nPlanet-Pipeline-GUI\n\n\n\n\n0.3\n\n\n\n\n\n\nGEE Asset Manager Addons\n\n\n\n\n0.1.7\n\n\n\n\n\n\nSynthetic LandScape Models\n\n\n\n\n0.1.1\n\n\n\n\n\n\nArcMap Addons\n\n\n\n\n0.1\n\n\n\n\n\n\nArcticDEM-Batch-Pipeline\n\n\n\n\n0.1.1\n\n\n\n\n\n\nJetstream-Unofficial-addon\n\n\n\n\n0.1.1", 
+            "text": "Release notes\n\n\n\n\n\n\n\n\nProject Name\n\n\nDigital Object Identification Number(DOI)\n\n\nRelease\n\n\n\n\n\n\n\n\n\n\nClip-Ship-Planet-CLI\n\n\n\n\n0.2.0\n\n\n\n\n\n\nSlack-Notifier-CLI-Addon\n\n\n\n\n0.1.0\n\n\n\n\n\n\nPlanet-GEE-Pipeline-CLI\n\n\n\n\n0.1.8\n\n\n\n\n\n\nPlanet-GEE-Pipeline-GUI\n\n\n\n\n0.1.4\n\n\n\n\n\n\nPlanet-Pipeline-GUI\n\n\n\n\n0.3\n\n\n\n\n\n\nGEE Asset Manager Addons\n\n\n\n\n0.1.7\n\n\n\n\n\n\nSynthetic LandScape Models\n\n\n\n\n0.1.1\n\n\n\n\n\n\nArcMap Addons\n\n\n\n\n0.1\n\n\n\n\n\n\nArcticDEM-Batch-Pipeline\n\n\n\n\n0.1.1\n\n\n\n\n\n\nJetstream-Unofficial-addon\n\n\n\n\n0.1.1", 
             "title": "Release notes"
         }, 
         {
             "location": "/release-notes/#release-notes", 
-            "text": "Project Name  Digital Object Identification Number(DOI)  Release      Clip-Ship-Planet-CLI   0.1.8    Slack-Notifier-CLI-Addon]   0.1.0    Planet-GEE-Pipeline-CLI   0.1.8    Planet-GEE-Pipeline-GUI   0.1.4    Planet-Pipeline-GUI   0.3    GEE Asset Manager Addons   0.1.7    Synthetic LandScape Models   0.1.1    ArcMap Addons   0.1    ArcticDEM-Batch-Pipeline   0.1.1    Jetstream-Unofficial-addon   0.1.1", 
+            "text": "Project Name  Digital Object Identification Number(DOI)  Release      Clip-Ship-Planet-CLI   0.2.0    Slack-Notifier-CLI-Addon   0.1.0    Planet-GEE-Pipeline-CLI   0.1.8    Planet-GEE-Pipeline-GUI   0.1.4    Planet-Pipeline-GUI   0.3    GEE Asset Manager Addons   0.1.7    Synthetic LandScape Models   0.1.1    ArcMap Addons   0.1    ArcticDEM-Batch-Pipeline   0.1.1    Jetstream-Unofficial-addon   0.1.1", 
             "title": "Release notes"
         }, 
         {
