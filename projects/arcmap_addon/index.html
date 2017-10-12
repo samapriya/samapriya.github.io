@@ -375,6 +375,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#batch-raster-to-point" title="Batch Raster to Point" class="md-nav__link">
+    Batch Raster to Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-table-to-csv" title="Batch Table to CSV" class="md-nav__link">
+    Batch Table to CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#email-notification" title="Email Notification" class="md-nav__link">
     Email Notification
   </a>
@@ -557,6 +571,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#batch-raster-to-point" title="Batch Raster to Point" class="md-nav__link">
+    Batch Raster to Point
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-table-to-csv" title="Batch Table to CSV" class="md-nav__link">
+    Batch Table to CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#email-notification" title="Email Notification" class="md-nav__link">
     Email Notification
   </a>
@@ -628,11 +656,13 @@
                 <h1 id="arcmap-addons">ArcMap Addons</h1>
 <p><a href="https://zenodo.org/badge/latestdoi/90535170"><img alt="DOI" src="https://zenodo.org/badge/90535170.svg" /></a></p>
 <p>While working on different projects over sometime I had to create and use some tools which acted as valuable addons to arcmap toolbox. I am sharing a few and I will keep on updating these as I keep working on new models.This toolbox was created on ArcMap 10.4 and is not backward compatible. The toolbox can be downloaded and added to existing toolbox to create additional functionalities.</p>
-<p><img alt="GUI" src="http://i.imgur.com/F4kSftD.gif" /></p>
+<p><img alt="GUI" src="https://i.imgur.com/yYBCikL.gif" /></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#usage-examples">Usage examples</a><ul>
+<li><a href="#batch-raster-to-point">Batch Raster to Point</a></li>
+<li><a href="#batch-table-to-csv">Batch Table to CSV</a></li>
 <li><a href="#email-notification">Email Notification</a></li>
 <li><a href="#iterative-clip">Iterative Clip</a></li>
 <li><a href="#multiband-to-single-images">MultiBand to Single Images</a></li>
@@ -647,9 +677,15 @@
 <h2 id="installation">Installation</h2>
 <p>We assume that the user already has a copy of ArcMap &gt;=10.4. The toolbox can be downloaded along with adjoining script and added onto existing toolbox. You can keep this toolbox as part of the default toolboxes by clicking Save Settings&gt;Save as Default</p>
 <h2 id="usage-examples">Usage examples</h2>
-<p>Usage examples will vary and only continue to grow as new tools are added to the toolbox. </p>
+<p>Usage examples will vary and only continue to grow as new tools are added to the toolbox.</p>
+<h3 id="batch-raster-to-point">Batch Raster to Point</h3>
+<p>This tool allows you to convert all Raster datasets in a folder into a point with the value field converted to GRID code. The tool supports all raster formats supported by ArcMap and renames the files automatically to the source file name. The raster pixel is converted to a centroid value.</p>
+<p><img alt="batchrp" src="https://i.imgur.com/oq7FPUh.jpg" /></p>
+<h3 id="batch-table-to-csv">Batch Table to CSV</h3>
+<p>This tool allows you to batch convert all table files(in this case it looks for '.dbf' files) and converts the fields into csv columns. This is an effective way when you want to handle a large number of dbf files to be imported into other softwares and or processing chains.</p>
+<p><img alt="batchcsv" src="https://i.imgur.com/JmXe1i4.jpg" /></p>
 <h3 id="email-notification">Email Notification</h3>
-<p>I found this to be one of the most useful tools when running a long process and not having to wait for your results. The tool makes use of the smtp library and allows the user to set up an email service for an email to be sent out after a process has been completed. </p>
+<p>I found this to be one of the most useful tools when running a long process and not having to wait for your results. The tool makes use of the smtp library and allows the user to set up an email service for an email to be sent out after a process has been completed.</p>
 <p><img alt="Email" src="http://i.imgur.com/Uj9m6II.gif" /></p>
 <h3 id="iterative-clip">Iterative Clip</h3>
 <p>This tool does exactl what the name suggests it uses an iterator tool to clip a raster to different boundaries using shapefiles. Requires a single raster file and a folder with multiple polygons for clips.</p>

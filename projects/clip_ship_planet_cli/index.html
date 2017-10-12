@@ -368,6 +368,82 @@
     Changelog
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v020" title="v0.2.0" class="md-nav__link">
+    v0.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v019" title="v0.1.9" class="md-nav__link">
+    v0.1.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v018" title="v0.1.8" class="md-nav__link">
+    v0.1.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v017" title="v0.1.7" class="md-nav__link">
+    v0.1.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v016" title="v0.1.6" class="md-nav__link">
+    v0.1.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v015" title="v0.1.5" class="md-nav__link">
+    v0.1.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v014" title="v0.1.4" class="md-nav__link">
+    v0.1.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v013" title="v0.1.3" class="md-nav__link">
+    v0.1.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v012" title="v0.1.2" class="md-nav__link">
+    v0.1.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v011" title="v0.1.1" class="md-nav__link">
+    v0.1.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -636,6 +712,82 @@
     Changelog
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v020" title="v0.2.0" class="md-nav__link">
+    v0.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v019" title="v0.1.9" class="md-nav__link">
+    v0.1.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v018" title="v0.1.8" class="md-nav__link">
+    v0.1.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v017" title="v0.1.7" class="md-nav__link">
+    v0.1.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v016" title="v0.1.6" class="md-nav__link">
+    v0.1.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v015" title="v0.1.5" class="md-nav__link">
+    v0.1.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v014" title="v0.1.4" class="md-nav__link">
+    v0.1.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v013" title="v0.1.3" class="md-nav__link">
+    v0.1.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v012" title="v0.1.2" class="md-nav__link">
+    v0.1.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v011" title="v0.1.1" class="md-nav__link">
+    v0.1.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -654,7 +806,7 @@
                 
                 
                 <h1 id="clip-ship-planet-cli-addon">Clip Ship Planet CLI addon</h1>
-<p><a href="https://doi.org/10.5281/zenodo.998031"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.998031.svg" /></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.1005752"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1005752.svg" /></a></p>
 <p>Planet's Clip API was a compute API designed to allowed users to clip the images to their area of interest. This would save them time in preprocessing and also allow the user to save on their area quota which might have restrictions. Based on Planet's Education and Research Program this quota is set at 10,000 square kilometers a month, which means saving up on quota is very useful. The discussion also led to an important clarification that users are in fact charged only for the area downloaded post clip if using the clip operation and hence this tool. This tool takes a sequential approach from activation to generating a clip request for multiple images activated and then processing the download tokens to actually download the clipped image files. The tool also consists of a sort function which allows the user to extract the files and sort them by type and deleting the original files to save on space.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the Clip-Ship-Planet-CLI you can simply perform the following action with Linux(Tested on Ubuntu 16):</p>
@@ -849,18 +1001,52 @@ optional arguments:
 </code></pre>
 
 <h2 id="changelog">Changelog</h2>
+<h3 id="v020">v0.2.0</h3>
+<ul>
+<li>Fixed issues with config files</li>
+</ul>
+<h3 id="v019">v0.1.9</h3>
+<ul>
+<li>Now handles running and succeeded status better</li>
+<li>Now enumerates during clip and download to allow user estimates on number of assets clipped and/or downloaded</li>
+</ul>
+<h3 id="v018">v0.1.8</h3>
 <ul>
 <li>Includes required packages list within installer</li>
-<li>Robust GEOJSON Parsing </li>
+<li>Robust GEOJSON Parsing</li>
+</ul>
+<h3 id="v017">v0.1.7</h3>
+<ul>
 <li>Fixed issues with processing visual asset types</li>
 <li>The Clip function now handles error codes if the post response code is not 202(accepted for processing) then the error code and item and asset type is printed.</li>
+</ul>
+<h3 id="v016">v0.1.6</h3>
+<ul>
 <li>Handles single time input API Key, this is needed only once to start the program</li>
 <li>Fixed issue with base metadata folder during sort</li>
 <li>Updated asset argument for asset activation to match styles</li>
+</ul>
+<h3 id="v015">v0.1.5</h3>
+<ul>
 <li>Updated Requirements.txt to include pyshp</li>
 <li>Fixed subprocess shell error, for now shell=True</li>
+</ul>
+<h3 id="v014">v0.1.4</h3>
+<ul>
+<li>General Improvements</li>
+</ul>
+<h3 id="v013">v0.1.3</h3>
+<ul>
+<li>General Improvements</li>
+</ul>
+<h3 id="v012">v0.1.2</h3>
+<ul>
 <li>Tested on Ubuntu 16.04 and now handles permissions problem</li>
 <li>Temporary files now written to config folders to avoid admin permission</li>
+</ul>
+<h3 id="v011">v0.1.1</h3>
+<ul>
+<li>General Improvements</li>
 </ul>
                 
                   
