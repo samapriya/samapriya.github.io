@@ -401,6 +401,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#earth-engine-asset-report" title="Earth Engine Asset Report" class="md-nav__link">
+    Earth Engine Asset Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#task-query" title="Task Query" class="md-nav__link">
     Task Query
   </a>
@@ -729,6 +736,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#earth-engine-asset-report" title="Earth Engine Asset Report" class="md-nav__link">
+    Earth Engine Asset Report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#task-query" title="Task Query" class="md-nav__link">
     Task Query
   </a>
@@ -863,6 +877,7 @@
 <li><a href="#upload-a-directory-with-images-and-associate-properties-with-each-image">Upload a directory with images and associate properties with each image:</a></li>
 <li><a href="#upload-a-directory-with-images-with-specific-nodata-value-to-a-selected-destination">Upload a directory with images with specific NoData value to a selected destination:</a></li>
 <li><a href="#asset-list">Asset List</a></li>
+<li><a href="#earth-engine-asset-report">Earth Engine Asset Report</a></li>
 <li><a href="#task-query">Task Query</a></li>
 <li><a href="#task-query-during-ingestion">Task Query during ingestion</a></li>
 <li><a href="#task-report">Task Report</a></li>
@@ -895,19 +910,24 @@ sudo python setup.py develop or sudo python setup.py install
 <h2 id="getting-started">Getting started</h2>
 <p>As usual, to print help:</p>
 <pre><code>usage: geeadd.py [-h]
-                 {ee_user,create,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
+                 {ee_user,create,upload,lst,ee_report,collsize,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
                  ...
 
 Google Earth Engine Batch Asset Manager with Addons
 
 positional arguments:
-  {ee_user,create,upload,lst,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
+  {ee_user,create,upload,lst,ee_report,collsize,tasks,taskquery,report,delete,mover,copy,access,collprop,cleanout,cancel}
     ee_user             Allows you to associate/change GEE account to system
     create              Allows the user to create an asset collection or
                         folder in Google Earth Engine
     upload              Batch Asset Uploader.
     lst                 List assets in a folder/collection or write as text
                         file
+    ee_report           Prints a detailed report of all Earth Engine Assets
+                        includes Asset Type, Path,Number of
+                        Assets,size(MB),unit,owner,readers,writers
+    collsize            Collects collection size in Human Readable form &amp;
+                        Number of assets
     tasks               Queries currently running, enqued,failed
     taskquery           Queries currently running, enqued,failed ingestions
                         and uploaded assets
@@ -928,6 +948,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
+
 </code></pre>
 
 <p>To obtain help for a specific functionality, simply call it with <em>help</em>
@@ -986,7 +1007,7 @@ Optional named arguments:
 </tr>
 </tbody>
 </table>
-<p>Note that header can contain only letters, digits and underscores. </p>
+<p>Note that header can contain only letters, digits and underscores.</p>
 <p>Example:</p>
 <table>
 <thead>
@@ -1057,6 +1078,18 @@ optional arguments:
   --items ITEMS        Number of items to list
 </code></pre>
 
+<h3 id="earth-engine-asset-report">Earth Engine Asset Report</h3>
+<p>This tool recursively goes through all your assets(Includes Images, ImageCollection,Table,) and generates a report containing the following fields
+[Type,Asset Type, Path,Number of Assets,size(MB),unit,owner,readers,writers].</p>
+<pre><code>usage: geeadd.py ee_report [-h] --outfile OUTFILE
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --outfile OUTFILE  This it the location of your report csv file
+</code></pre>
+
+<p>A simple setup is the following
+<code>geeadd --outfile "C:\johndoe\report.csv"</code></p>
 <h3 id="task-query">Task Query</h3>
 <p>This script counts all currently running and ready tasks along with failed tasks.</p>
 <pre><code>usage: geeadd.py tasks [-h]
@@ -1076,7 +1109,7 @@ optional arguments:
   --destination DESTINATION
                         Full path to asset where you are uploading files
 
-geeadd.py taskquery &quot;users/johndoe/myfolder/myponycollection&quot;                       
+geeadd.py taskquery &quot;users/johndoe/myfolder/myponycollection&quot;
 </code></pre>
 
 <h3 id="task-report">Task Report</h3>
@@ -1117,7 +1150,7 @@ optional arguments:
                         Existing path of assets
   --finalpath FINALPATH
                         New path for assets
-geeadd.py mover --assetpath &quot;users/johndoe/myfolder/myponycollection&quot; --destination &quot;users/johndoe/myfolder/myotherponycollection&quot;                  
+geeadd.py mover --assetpath &quot;users/johndoe/myfolder/myponycollection&quot; --destination &quot;users/johndoe/myfolder/myotherponycollection&quot;
 </code></pre>
 
 <h3 id="assets-copy">Assets Copy</h3>
@@ -1128,7 +1161,7 @@ optional arguments:
   -h, --help         show this help message and exit
   --initial INITIAL  Existing path of assets
   --final FINAL      New path for assets
-geeadd.py mover --initial &quot;users/johndoe/myfolder/myponycollection&quot; --final &quot;users/johndoe/myfolder/myotherponycollection&quot;                  
+geeadd.py mover --initial &quot;users/johndoe/myfolder/myponycollection&quot; --final &quot;users/johndoe/myfolder/myotherponycollection&quot;
 </code></pre>
 
 <h3 id="assets-access">Assets Access</h3>
@@ -1148,7 +1181,7 @@ geeadd.py access --mode folder --asset &quot;folder/collection/image&quot; --use
 </code></pre>
 
 <h3 id="set-collection-property">Set Collection Property</h3>
-<p>This script is derived from the ee tool to set collection properties and will set overall properties for collection. </p>
+<p>This script is derived from the ee tool to set collection properties and will set overall properties for collection.</p>
 <pre><code>usage: geeadd.py collprop [-h] [--coll COLL] [--p P]
 
 optional arguments:
