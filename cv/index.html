@@ -25,6 +25,10 @@
       
         <meta name="lang:search.language" content="en">
       
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
         <meta name="lang:search.result.none" content="No matching documents">
       
         <meta name="lang:search.result.one" content="1 matching document">
@@ -34,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
       
@@ -42,13 +46,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.41c6761c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
       
     
     
       <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
@@ -59,19 +64,41 @@
     
   </head>
   
-    <body>
+    <body dir="ltr">
   
     <svg class="md-svg">
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
         
       </defs>
     </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#research-specialization-and-interest" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -107,11 +134,13 @@
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -293,6 +322,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#invited-talks-and-trainings" title="Invited Talks and Trainings" class="md-nav__link">
+    Invited Talks and Trainings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conference-presentations-trainings-and-attendance" title="Conference presentations, Trainings and Attendance" class="md-nav__link">
     Conference presentations, Trainings and Attendance
   </a>
@@ -340,6 +376,8 @@
   </a>
   
 </li>
+      
+      
       
       
       
@@ -634,6 +672,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#invited-talks-and-trainings" title="Invited Talks and Trainings" class="md-nav__link">
+    Invited Talks and Trainings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conference-presentations-trainings-and-attendance" title="Conference presentations, Trainings and Attendance" class="md-nav__link">
     Conference presentations, Trainings and Attendance
   </a>
@@ -681,6 +726,8 @@
   </a>
   
 </li>
+      
+      
       
       
       
@@ -743,6 +790,18 @@
 <li>Experience with QGIS, eCognition, MATLAB, Fragstats, Patch Analyst, SPSS, QUAL2Kw, SocNetV, Expert Choice 2000, GRASS, ILWIS.</li>
 </ul>
 <h3 id="employment">Employment</h3>
+<ul>
+<li>May 2018- 2019: Senior Developer Advocate Intern, Planet Labs</li>
+</ul>
+<blockquote>
+<p>Responsibilites include Growing and supporting Planet’s technical user communities and developing new analytical tools and tutorials. Teaching workshops and delivering conference talks to technologists in academic communities and to developers in the geospatial and cloud industries. Collaborating on remote sensing science, including primary research on the evolution, geomorphology, and long-term welfare of the world’s coastal ecosystems.</p>
+</blockquote>
+<ul>
+<li>January 2018- May 2019: Developer Advocate Intern, Planet Labs</li>
+</ul>
+<blockquote>
+<p>Responsibilities include growing and supporting user communities for Planet’s Developer Center and the Education and Research Program.Developing new analytical tools, tutorials, and workshops for technical users of Planet data and tools.</p>
+</blockquote>
 <ul>
 <li>2017-2018: Research Assistant, Indiana University funded by National Science Foundation(NSF)</li>
 </ul>
@@ -811,58 +870,72 @@
 <h3 id="tools-products">Tools &amp; Products</h3>
 <ul>
 <li>
-<p>Samapriya Roy. (2017, October 9). samapriya/Clip-Ship-Planet-CLI: Clip-Ship-Batch Planet Command Line Interface (Version 0.2.0). Zenodo. http://doi.org/10.5281/zenodo.1005752</p>
+<p>Google Earth Engine Account Transfer Tool,Samapriya Roy. (2018, February 27). <strong>samapriya/gee-takeout: Google Earth Engine Account Transfer Tool</strong> (Version 0.1). Zenodo. http://doi.org/10.5281/zenodo.1185158</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, September 5). samapriya/Slack-Notifier-CLI-Addon: Slack Notifier-CLI Addon (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.885505</p>
+<p>Clip-Ship-Planet-CLI,Samapriya Roy. (2017, December 20). <strong>samapriya/Clip-Ship-Planet-CLI: Clip-Ship-Batch Planet Command Line Interface</strong> (Version 0.2.1). Zenodo. http://doi.org/10.5281/zenodo.1119192</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, November 9). samapriya/Planet-GEE-Pipeline-CLI: Planet-GEE-Pipeline-CLI (Version 0.2.0). Zenodo. http://doi.org/10.5281/zenodo.1044509</p>
+<p>Slack-Notifier-CLI-Addon,Samapriya Roy. (2017, September 5). <strong>samapriya/Slack-Notifier-CLI-Addon: Slack Notifier-CLI Addon</strong> (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.885505</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, June 25). samapriya/Planet-GEE-Pipeline-GUI: Planet-GEE-Pipeline-GUI (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.817739</p>
+<p>Planet-GEE-Pipeline-CLI,Samapriya Roy. (2018, March 8). <strong>samapriya/Planet-GEE-Pipeline-CLI: Planet-GEE-Pipeline-CLI</strong> (Version 0.2.1). Zenodo. http://doi.org/10.5281/zenodo.1194323</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, August 17). samapriya/Planet-Pipeline-GUI: Planet-Pipeline-GUI (Version 0.3). Zenodo. http://doi.org/10.5281/zenodo.844149</p>
+<p>Planet-GEE-Pipeline-GUI,Samapriya Roy. (2017, June 25). <strong>samapriya/Planet-GEE-Pipeline-GUI: Planet-GEE-Pipeline-GUI</strong> (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.817739</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, November 29). samapriya/gee_asset_manager_addon: GEE Asset Manager with Addons (Version 0.2.2). Zenodo. http://doi.org/10.5281/zenodo.1068184</p>
+<p>Planet-Pipeline-GUI,Samapriya Roy. (2017, August 17). <strong>samapriya/Planet-Pipeline-GUI: Planet-Pipeline-GUI</strong> (Version 0.3). Zenodo. http://doi.org/10.5281/zenodo.844149
+GEE Asset Manager Addons,Samapriya Roy. (2018, March 8). <strong>samapriya/gee_asset_manager_addon: GEE Asset Manager with Addons</strong> (Version 0.2.3). Zenodo. http://doi.org/10.5281/zenodo.1194308</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, October 12). samapriya/arcmap-addons: ArcMap Addons (Version 0.2). Zenodo. http://doi.org/10.5281/zenodo.1009210</p>
+<p>ArcMap Addons,Samapriya Roy. (2017, October 12). <strong>samapriya/arcmap-addons: ArcMap Addons</strong> (Version 0.2). Zenodo. http://doi.org/10.5281/zenodo.1009210
+ArcticDEM-Batch-Pipeline,Samapriya Roy. (2018, May 3). <strong>samapriya/ArcticDEM-Batch-Pipeline: ArcticDEM-Batch-Pipeline</strong> (Version 0.1.2). Zenodo. http://doi.org/10.5281/zenodo.1240456</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, August 12). samapriya/ArcticDEM-Batch-Pipeline: ArcticDEM-Batch-Pipeline (Version 0.1.1). Zenodo. http://doi.org/10.5281/zenodo.842056</p>
+<p>Jetstream-Unofficial-addon,Samapriya Roy. (2018, March 12). <strong>samapriya/jetstream-unofficial-addon: jetstream-unofficial-addon</strong> (Version 0.1.2). Zenodo. http://doi.org/10.5281/zenodo.1196653</p>
 </li>
 <li>
-<p>Samapriya Roy. (2017, August 16). samapriya/jetstream-unofficial-addon: jetstream-unofficial-addon (Version 0.1.1). Zenodo. http://doi.org/10.5281/zenodo.844018</p>
-</li>
-<li>
-<p>Samapriya Roy. (2017, December 4). samapriya/Planet-Batch-Slack-Pipeline-CLI: Planet-Batch-Slack-Pipeline-CLI (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.1079887</p>
+<p>Planet-Batch-Slack-CLI,Samapriya Roy. (2017, December 4). <strong>samapriya/Planet-Batch-Slack-Pipeline-CLI: Planet-Batch-Slack-Pipeline-CLI</strong> (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.1079887</p>
 </li>
 </ul>
 <h3 id="articles-blogposts-and-publications">Articles, Blogposts and Publications</h3>
 <ul>
 <li>
-<p>Roy,Samapriya, <strong>"Talk Slack to Me: Integrating Planet and Slack API for Automation &amp; Batch Notifications"</strong>, 4th December 2017, <a href="https://medium.com/planet-stories/talk-slack-to-me-integrating-planet-and-slack-api-for-automation-batch-notifications-b47e2236429f">https://medium.com/planet-stories/talk-slack-to-me-integrating-planet-and-slack-api-for-automation-batch-notifications-b47e2236429f</a></p>
+<p>Roy,Samapriya, <strong>"Google Earth Engine Takeout: Tools and Guide for Code and Asset Transfer"</strong>, 4th December 2017, <a href="https://medium.com/@samapriyaroy/google-earth-engine-takeout-tools-and-guide-for-code-and-asset-transfer-aa865e0046e3">Read Here</a></p>
 </li>
 <li>
-<p>Roy,Samapriya, <strong>"Baking API Clients in a Raspberry Pi: Planet and Earth Engine in a Box"</strong>, 22nd November 2017, <a href="https://medium.com/p/baking-api-clients-in-a-raspberry-pi-planet-and-earth-engine-in-a-box-b4967bd85bb5">https://medium.com/p/baking-api-clients-in-a-raspberry-pi-planet-and-earth-engine-in-a-box-b4967bd85bb5</a></p>
+<p>Roy,Samapriya, <strong>"Talk Slack to Me: Integrating Planet and Slack API for Automation &amp; Batch Notifications"</strong>, 4th December 2017, <a href="https://medium.com/planet-stories/talk-slack-to-me-integrating-planet-and-slack-api-for-automation-batch-notifications-b47e2236429f">Read Here</a></p>
 </li>
 <li>
-<p>Roy, Samapriya, <strong>"Planet, People and Pixels: A Data Pipeline to link Planet API to Google Earth Engine"</strong>, 10 July 2017, <a href="https://medium.com/planet-stories/planet-people-and-pixels-a-data-pipeline-to-link-planet-api-to-google-earth-engine-1166606445a8">https://medium.com/planet-stories/planet-people-and-pixels-a-data-pipeline-to-link-planet-api-to-google-earth-engine-1166606445a8</a></p>
+<p>Roy,Samapriya, <strong>"Baking API Clients in a Raspberry Pi: Planet and Earth Engine in a Box"</strong>, 22nd November 2017, <a href="https://medium.com/p/baking-api-clients-in-a-raspberry-pi-planet-and-earth-engine-in-a-box-b4967bd85bb5">Read Here </a></p>
 </li>
 <li>
-<p>Roy Samapriya, <strong>"Clip and Ship: Batch Clips using Planet’s Clips API"</strong>, 15 September 2017,<a href="https://medium.com/planet-stories/clip-and-ship-batch-clips-using-planets-clips-api-ddddb1e2109a">https://medium.com/planet-stories/clip-and-ship-batch-clips-using-planets-clips-api-ddddb1e2109a</a></p>
+<p>Roy, Samapriya, <strong>"Planet, People and Pixels: A Data Pipeline to link Planet API to Google Earth Engine"</strong>, 10 July 2017, <a href="https://medium.com/planet-stories/planet-people-and-pixels-a-data-pipeline-to-link-planet-api-to-google-earth-engine-1166606445a8">Read Here</a></p>
 </li>
 <li>
-<p>Roy,Samapriya, <strong>"Google Earth Engine Asset Manager and Addons: Building Tools of the Trade"</strong>, 19 October 2017, <a href="https://medium.com/@samapriyaroy/google-earth-engine-asset-manager-and-addons-building-tools-of-the-trade-8eb493b21eda">https://medium.com/@samapriyaroy/google-earth-engine-asset-manager-and-addons-building-tools-of-the-trade-8eb493b21eda</a></p>
+<p>Roy Samapriya, <strong>"Clip and Ship: Batch Clips using Planet’s Clips API"</strong>, 15 September 2017,<a href="https://medium.com/planet-stories/clip-and-ship-batch-clips-using-planets-clips-api-ddddb1e2109a">Read Here</a></p>
+</li>
+<li>
+<p>Roy,Samapriya, <strong>"Google Earth Engine Asset Manager and Addons: Building Tools of the Trade"</strong>, 19 October 2017, <a href="https://medium.com/@samapriyaroy/google-earth-engine-asset-manager-and-addons-building-tools-of-the-trade-8eb493b21eda">Read Here</a></p>
+</li>
+</ul>
+<h3 id="invited-talks-and-trainings">Invited Talks and Trainings</h3>
+<ul>
+<li>
+<p>Stanford Big Earth Hackathon April 14-15th 2018, Stanford University: Invited to coordiante use of <strong>Planet data and API mechanics to formulate and work on Earth Sciences and big data problems</strong> with students as Developer advocate intern. <a href="https://samapriya.github.io/Open-Impact/sfh/">Github Link</a></p>
+</li>
+<li>
+<p>CSDMS 2018 Annual Meeting, May 22 -24th 2018, Boulder Colorado, USA: Organized Clinic <strong>Introduction to Google Earth Engine</strong> <a href="https://samapriya.github.io/Open-Impact/csdms2018/">Github Link</a></p>
+</li>
+<li>
+<p>American Geophysical Union Fall Meeting 2017: Invited Talk: <strong>Earth Science in Real Time with the Planet SmallSat Constellation.</strong> December 11-15th 2017</p>
 </li>
 </ul>
 <h3 id="conference-presentations-trainings-and-attendance">Conference presentations, Trainings and Attendance</h3>
 <ul>
 <li>
-<p>American Geophysical Union Fall Meeting 2017: Invited Talk: Earth Science in Real Time with the Planet SmallSat Constellation. December 11-15th 2017</p>
+<p>Cyverse Container Camp 7th to 9th March: Container Technology for Scientific Research Introduction to Docker and Singularity images in High Performance Computing environments.</p>
 </li>
 <li>
 <p>American Geophysical Union Annual Meeting 2017(AGU 2017) Spatial and Temporal Patterns of Land Loss in Mississipi River Delta. December 11-15th 2017. New Orleans, Louisiana</p>
@@ -963,6 +1036,8 @@
               
               
                 
+
+
               
             </article>
           </div>
@@ -1044,14 +1119,14 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
     
     
       
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-110312267-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-110312267-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>
