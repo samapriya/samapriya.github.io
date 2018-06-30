@@ -1,130 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
      <loc>https://github.com/samapriya/aboutme/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>https://github.com/samapriya/cv/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>https://github.com/samapriya/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>https://github.com/samapriya/projects/clip_ship_planet_cli/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <loc>https://github.com/samapriya/pypi/</loc>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>https://github.com/samapriya/projects/slack_notifier_cli_addon/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <loc>https://github.com/samapriya/projects/gee_takeout/</loc>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>https://github.com/samapriya/projects/planet_pipeline_gui/</loc>
-     <lastmod>2018-05-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     <url>
      <loc>https://github.com/samapriya/projects/gee_asset_manager_addon/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
      <loc>https://github.com/samapriya/projects/planet_gee_pipeline_cli/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>https://github.com/samapriya/projects/planet_gee_pipeline_gui/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <loc>https://github.com/samapriya/projects/clip_ship_planet_cli/</loc>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>https://github.com/samapriya/projects/arcmap_addon/</loc>
-     <lastmod>2018-05-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://github.com/samapriya/projects/synthetic_models/</loc>
-     <lastmod>2018-05-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://github.com/samapriya/projects/arcticdem_download/</loc>
-     <lastmod>2018-05-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://github.com/samapriya/projects/jetstream_unofficial_cli/</loc>
-     <lastmod>2018-05-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     <url>
      <loc>https://github.com/samapriya/projects/planet_batch_slack/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
+    <url>
+     <loc>https://github.com/samapriya/projects/planet_pipeline_gui/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/planet_gee_pipeline_gui/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/jetstream_unofficial_cli/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/arcticdem_download/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/arcmap_addon/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/slack_notifier_cli_addon/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/synthetic_models/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://github.com/samapriya/projects/open-impact/</loc>
+     <lastmod>2018-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     <url>
      <loc>https://github.com/samapriya/project-citations/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>https://github.com/samapriya/release-notes/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>https://github.com/samapriya/license/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>https://github.com/samapriya/credits/</loc>
-     <lastmod>2018-05-07</lastmod>
+     <lastmod>2018-06-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
 </urlset>
