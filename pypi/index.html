@@ -302,6 +302,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#geeup-simple-cli-for-google-earth-engine-uploads" title="geeup: Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    geeup: Simple CLI for Google Earth Engine Uploads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gee2drive-google-earth-engine-to-drive-export-manager" title="gee2drive: Google Earth Engine to Drive Export Manager" class="md-nav__link">
     gee2drive: Google Earth Engine to Drive Export Manager
   </a>
@@ -807,6 +814,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#geeup-simple-cli-for-google-earth-engine-uploads" title="geeup: Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    geeup: Simple CLI for Google Earth Engine Uploads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gee2drive-google-earth-engine-to-drive-export-manager" title="gee2drive: Google Earth Engine to Drive Export Manager" class="md-nav__link">
     gee2drive: Google Earth Engine to Drive Export Manager
   </a>
@@ -870,6 +884,14 @@
                 <h1 id="pypi-releases"><strong>PyPI Releases</strong></h1>
 <p>I have successfully converted some of the github projects into PyPI projects for allowing easier installation and usage. Some of these have been tested for compatibility with Google Colaboratory and for building within a Docker image. Currently maintained pypi projects include</p>
 <p><center><img alt="PyPI" src="https://i.imgur.com/1XTjf2J.png" /></center></p>
+<h4 id="geeup-simple-cli-for-google-earth-engine-uploads">geeup: Simple CLI for Google Earth Engine Uploads</h4>
+<p><a href="https://badge.fury.io/py/geeup"><img alt="PyPI version" src="https://badge.fury.io/py/geeup.svg" /></a></p>
+<p>This came of the simple need to handle batch uploads of both image assets to collections but also thanks to the new table feature the possibility of batch uploading shapefiles into a folder. Though a lot of these tools including batch image uploader is part of my other project geeadd which also includes additional features to add to the python CLI, this tool was designed to be minimal so as to allow the user to simply query their quota, upload images or tables and also to query ongoing tasks and delete assets. I am hoping this tool with a simple objective proves useful to a few users of Google Earth Engine.</p>
+<p><center></p>
+<pre><code class="js">pip install geeup
+</code></pre>
+
+<p></center></p>
 <h4 id="gee2drive-google-earth-engine-to-drive-export-manager">gee2drive: Google Earth Engine to Drive Export Manager</h4>
 <p><a href="https://badge.fury.io/py/gee2drive"><img alt="PyPI version" src="https://badge.fury.io/py/gee2drive.svg" /></a></p>
 <p>I created this tool which allows you to run a terminal environment where your personal and general catalog images are part of a autosuggest feature. This tool allows you to look for images based on names for example " you can search for Sentinel and it will show you full path of images which have the word sentinel in the title". It also creates a report for your image collections and images so apart from the public datasets this can also find your own datasets as well. You can then generate bandlist to make sure all bands you are exporting are of the same type and then export all images that intersect you aoi.</p>
