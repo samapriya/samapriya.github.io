@@ -13,7 +13,7 @@
         <meta name="description" content="Description of current projects on Github and updates">
       
       
-        <link rel="canonical" href="https://github.com/samapriya/projects/arcticdem_download/">
+        <link rel="canonical" href="https://github.com/samapriya/projects/satadd/">
       
       
         <meta name="author" content="Samapriya Roy">
@@ -42,7 +42,7 @@
     
     
       
-        <title>ArcticDEM-Batch-Pipeline - Samapriya Roy</title>
+        <title>Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets - Samapriya Roy</title>
       
     
     
@@ -96,7 +96,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#arcticdem-batch-download-processing-tools" tabindex="1" class="md-skip">
+      <a href="../../#satadd-cli-pipeline-for-planet-satellogic-google-earth-engine-and-digital-globe-imagery" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -122,7 +122,7 @@
                 Samapriya Roy
               </span>
               <span class="md-header-nav__topic">
-                ArcticDEM-Batch-Pipeline
+                Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets
               </span>
             
           
@@ -306,10 +306,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
     
     <label class="md-nav__link" for="nav-5-1">
       Additional Tools
@@ -325,11 +327,145 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../satadd/" title="Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets
+      </label>
+    
+    <a href="./" title="Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets" class="md-nav__link md-nav__link--active">
       Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
+    Table of contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting started" class="md-nav__link">
+    Getting started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#satadd-satellite-data-download-addon" title="satadd Satellite Data Download Addon" class="md-nav__link">
+    satadd Satellite Data Download Addon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-and-authenticate" title="Initialize and Authenticate" class="md-nav__link">
+    Initialize and Authenticate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planet-tools" title="Planet Tools" class="md-nav__link">
+    Planet Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbdx-tools" title="GBDX Tools" class="md-nav__link">
+    GBDX Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#satellogic-tools" title="Satellogic Tools" class="md-nav__link">
+    Satellogic Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gee-tools" title="GEE Tools" class="md-nav__link">
+    GEE Tools
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v004" title="v0.0.4" class="md-nav__link">
+    v0.0.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v003" title="v0.0.3" class="md-nav__link">
+    v0.0.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v002" title="v0.0.2" class="md-nav__link">
+    v0.0.2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -582,12 +718,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6">
     
     <label class="md-nav__link" for="nav-5-6">
       PGC ArcticDEM Tools
@@ -603,104 +737,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        ArcticDEM-Batch-Pipeline
-      </label>
-    
-    <a href="./" title="ArcticDEM-Batch-Pipeline" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../arcticdem_download/" title="ArcticDEM-Batch-Pipeline" class="md-nav__link">
       ArcticDEM-Batch-Pipeline
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of contents" class="md-nav__link">
-    Table of contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" title="Getting started" class="md-nav__link">
-    Getting started
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#subset-to-aoi" title="Subset to AOI" class="md-nav__link">
-    Subset to AOI
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#estimate-download-size" title="Estimate Download Size" class="md-nav__link">
-    Estimate Download Size
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#download-dem" title="Download DEM" class="md-nav__link">
-    Download DEM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extract-dem" title="Extract DEM" class="md-nav__link">
-    Extract DEM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metadata-parsing-for-gee" title="Metadata Parsing for GEE" class="md-nav__link">
-    Metadata Parsing for GEE
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -885,19 +926,47 @@
     Getting started
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#subset-to-aoi" title="Subset to AOI" class="md-nav__link">
-    Subset to AOI
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#estimate-download-size" title="Estimate Download Size" class="md-nav__link">
-    Estimate Download Size
+  <a href="#satadd-satellite-data-download-addon" title="satadd Satellite Data Download Addon" class="md-nav__link">
+    satadd Satellite Data Download Addon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-and-authenticate" title="Initialize and Authenticate" class="md-nav__link">
+    Initialize and Authenticate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planet-tools" title="Planet Tools" class="md-nav__link">
+    Planet Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gbdx-tools" title="GBDX Tools" class="md-nav__link">
+    GBDX Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#satellogic-tools" title="Satellogic Tools" class="md-nav__link">
+    Satellogic Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gee-tools" title="GEE Tools" class="md-nav__link">
+    GEE Tools
   </a>
   
 </li>
@@ -908,23 +977,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#download-dem" title="Download DEM" class="md-nav__link">
-    Download DEM
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v004" title="v0.0.4" class="md-nav__link">
+    v0.0.4
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#extract-dem" title="Extract DEM" class="md-nav__link">
-    Extract DEM
+        
+          <li class="md-nav__item">
+  <a href="#v003" title="v0.0.3" class="md-nav__link">
+    v0.0.3
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#metadata-parsing-for-gee" title="Metadata Parsing for GEE" class="md-nav__link">
-    Metadata Parsing for GEE
+        
+          <li class="md-nav__item">
+  <a href="#v002" title="v0.0.2" class="md-nav__link">
+    v0.0.2
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -944,192 +1026,172 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/samapriya/edit/master/docs/projects/arcticdem_download.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/samapriya/edit/master/docs/projects/satadd.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="arcticdem-batch-download-processing-tools">ArcticDEM Batch Download &amp; Processing Tools</h1>
-<p><a href="https://doi.org/10.5281/zenodo.841299"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.841299.svg" /></a>
-<a href="https://www.pgc.umn.edu/"><img alt="PGC" src="https://img.shields.io/badge/PGC-BootCamp%202017-green.svg" /></a></p>
-<p>ArcticDEM project was a joint project supported by both the National Geospatial-Intelligence Agency(NGA) and the National Science Foundation(NSF) with the idea of creating a high resolution and high quality digital surface model(DSM). The product is distributed free of cost as time-dependent DEM strips and is hosted as https links that a user can use to download each strip. As per their policy</p>
-<p><em>The seamless terrain mosaic can be distributed without restriction.</em></p>
-<p>The created product is a 2-by-2 meter elevation cells over an over of over 20 million square kilometers and uses digital globe stereo imagery to create these high resolution DSM. The method used for the 2m derivate is Surface Extraction with TIN-based Search-space Minimization(SETSM).</p>
-<p>Based on their acknowledgements requests you can use
-<em>Acknowledging PGC services(including data access)</em></p>
-<ul>
-<li>Geospatial support for this work provided by the Polar Geospatial Center under NSF OPP awards 1043681 &amp; 1559691.</li>
-</ul>
-<p><em>Acknowledging DEMS created from the ArcticDEM project</em></p>
-<ul>
-<li>DEMs provided by the Polar Geospatial Center under NSF OPP awards 1043681, 1559691 and 1542736.</li>
-</ul>
-<p>You can find details on the background, scope and methods among other details <a href="https://www.pgc.umn.edu/guides/arcticdem/introduction-to-arcticdem/?print=pdf">here</a>
-A detailed acknowledgement link can be found <a href="https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/">here</a></p>
-<p>With this in mind and with the potential applications of using these toolsets there was a need to batch download the DEM files for your area of interest and to be able to extract, clean and process metadata. In all fairness this tool has a motive of extending this as an input to Google Earth Engine and hence the last tool which is the metadata parser is designed to create a metadata manifest in a csv file which GEE can understand and associate during asset upload. </p>
+                <h1 id="satadd-cli-pipeline-for-planet-satellogic-google-earth-engine-and-digital-globe-imagery">satadd: CLI pipeline for Planet, Satellogic, Google Earth Engine and Digital Globe Imagery</h1>
+<p><a href="https://doi.org/10.5281/zenodo.1450622"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1450622.svg" /></a>
+<a href="https://badge.fury.io/py/satadd"><img alt="PyPI version" src="https://badge.fury.io/py/satadd.svg" /></a></p>
+<p>Cite as</p>
+<pre><code>Samapriya Roy. (2018, October 6). samapriya/satadd: satadd: CLI pipeline for Planet, Satellogic,
+Google Earth Engine and Digital Globe Imagery (Version 0.0.3). Zenodo. http://doi.org/10.5281/zenodo.1450622
+</code></pre>
+
+<p>Google Earth Engine opened the door for the possibility of getting a curated list of public datasets already ingested in an analysis platform. With over 450+ raster datasets alone, they form one of the most unique collections for publicly available datasets and are still growing. While this was happening for free and open source datasets more and more data was coming in and companies were opening their doors to open data and has missions to include researchers, users, developers and everyone else who wanted to use this datasets. This included but is not limited to companies like Planet, Digital Globe and Satellogic making large chunks of their datasets open for users. Also introduction of high temporal resolution datasets like PlanetScope, high spatial resolution like Skysat and Digital Globe and high spectral resolution images like hyperspectral data from Satellogic was changing our approach to problem solving. While there has been development in building standard API and data access methods there is still room for growth and standrardization and above all easy access to these resources. Planet's <a href="https://www.planet.com/products/open-california/">Open California Program</a>, the <a href="https://www.planet.com/markets/education-and-research/">Education and Research Program</a> , Digital Globe's <a href="https://www.digitalglobe.com/opendata">Open Data Program</a> and <a href="https://github.com/satellogic/open-impact">Education and Research program under Satellogic and their Open Data</a> it became obvious that questions we can ask from these sensors could get interesting.</p>
+<p>This tool was built with a focus on the same issues and borrow parts from my other projects such as <a href="https://pypi.org/project/ppipe/">ppipe</a> for handling Planet's datasets, <a href="https://pypi.org/project/gee2drive/">gee2drive</a> to handle download collections already available in Google Earth Engine (GEE), <a href="https://pypi.org/project/pygbdx/">pygbdx</a> which is a relatively new project to explore Digital Globe assets and I have now integrated tools to access and download Satellogic imagery. Core components from a lot of these tools have gone into building <a href="https://pypi.org/project/satadd/">satadd</a> based on the idea of adding satelite data as needed. These tools include authentications setups for every account, and access to datasets, metadata among other tools. This was not build however for heavy lifting though I have tested this on hundreds and thousands of assets delivery so it behaves robustly for now. The tool is build and rebuilt as companies change their authentication protocal and delivery mechanisms and allow for improving many aspects of data delivery and preprocessing in the next iterations.</p>
+<p>While almost all of these tools allow for local export, GEE only exports for now to Google Drive or your Google Cloud Storage Buckets, though what is lost in the delivery endpoints is gained in the fact that GEE is already a mature platform to analyze and look at open datasets but also allows you to bring private datasets into GEE for analysis. So while data download and local analysis may have been the norm, it serves us well to think about posting analysis rather in analysis engines. But that is a discussion for a different time. At this point, I am hoping that this tool alows you to do exactly what the intentions might have been from different providers and to bring them together. Since this tool downloads data it is indeed bandwidth heavy and requires a steady internet connection. This tools handles authentication, downloading, and talking to different API end points and services. In the future I am hoping to include additional preprocessing and delivery to non local endpoints like existing ftp, servers or buckets.</p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#getting-started">Getting started</a></li>
-<li><a href="#usage-examples">Usage examples</a><ul>
-<li><a href="#subset-to-aoi">Subset to AOI</a></li>
-<li><a href="#estimate-download-size">Estimate Download Size</a></li>
-<li><a href="#download-dem">Download DEM</a></li>
-<li><a href="#extract-dem">Extract DEM</a></li>
-<li><a href="#metadata-parsing-for-gee">Metadata Parsing for GEE</a></li>
+<li><a href="#satadd-satellite-data-download-addon">satadd Satellite Data Download Addon</a><ul>
+<li><a href="#initialize-and-authenticate">Initialize and Authenticate</a></li>
+<li><a href="#satadd-refresh">Planet Tools</a></li>
+<li><a href="#satadd-idsearch">GBDX Tools</a></li>
+<li><a href="#satadd-intersect">Satellogic Tools</a></li>
+<li><a href="#satadd-bandtype">GEE Tools</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="installation">Installation</h2>
-<p>We assume that you have installed the requirements files to install all the necessary packages and libraries required to use this tool. To install packages from the requirements.txt file you can simply use
-<code>pip install -r requirements.txt</code>. Remember that installation is an optional step and you can run this program by simply browsing to the pgcdem-cli file and typing <code>python arcticdem.py</code>. One of the only other requirement for this tool is the Master Shapefile for all DEM footprints(make sure to use the most updated version which can be found <a href="https://www.pgc.umn.edu/data/arcticdem/">here</a>)</p>
+<p>This assumes that you have native python &amp; pip installed in your system, you can test this by going to the terminal (or windows command prompt) and trying</p>
+<p><code>python</code> and then <code>pip list</code></p>
+<p>If you get no errors and you have python 2.7.14 or higher you should be good to go. Please note that I have released this as a python 2.7 but can be easily modified for python 3.</p>
 <p><strong>This toolbox also uses some functionality from GDAL</strong>
 For installing GDAL in Ubuntu</p>
 <pre><code>sudo add-apt-repository ppa:ubuntugis/ppa &amp;&amp; sudo apt-get update
 sudo apt-get install gdal-bin
+sudo apt-get install python-gdal
 </code></pre>
 
 <p>For Windows I found this <a href="https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows">guide</a> from UCLA</p>
-<p>To install <strong>ArcticDEM Batch Download &amp; Processing Tools:</strong></p>
-<pre><code>git clone https://github.com/samapriya/ArcticDEM-Batch-Pipeline.git
-cd ArcticDEM-Batch-Pipeline &amp;&amp; pip install .
+<p>It has been brought to my attention that installing shapely on windows is not simply <code>pip install shapely</code> so install Shapely separately and <a href="https://pypi.org/project/Shapely/">use instructions from their pypi project page</a> for Windows installation <strong>Shapely is important requirement for the tool but since the installation varies based on the operating system install it using the earlier instructions anyways before the next steps</strong>. On other operating systems <code>pip install shapely</code> should work just fine.</p>
+<p>To install <strong>satadd</strong>
+You can install using two methods</p>
+<p><code>pip install satadd</code></p>
+<p>or you can also try</p>
+<pre><code>git clone https://github.com/samapriya/satadd.git
+cd satadd
+python setup.py install
 </code></pre>
 
-<p>This release also contains a windows installer which bypasses the need for you to have admin permission, it does however require you to have python in the system path meaning when you open up command prompt you should be able to type python and start it within the command prompt window. Post installation using the installer you can just call ppipe using the command prompt similar to calling python. Give it a go post installation type</p>
-<pre><code>arcticdem -h
+<p>For linux use sudo. This release also contains a windows installer which bypasses the need for you to have admin permission, it does however require you to have python in the system path meaning when you open up command prompt you should be able to type python and start it within the command prompt window. Post installation using the installer you can just call satadd using the command prompt similar to calling python. Give it a go post installation type</p>
+<pre><code>satadd -h
 </code></pre>
 
-<p>The advantage of having it installed is being able to execute ppipe as any command line tool. I recommend installation within virtual environment. As a extra addon feature I have wrapped the cli into a Graphical User Interface(GUI) so some people will find it easier to use.</p>
-<p>To install run</p>
-<pre><code>python setup.py develop or python setup.py install
-
-In a linux distribution
-sudo python setup.py develop or sudo python setup.py install
-</code></pre>
-
+<p>Installation is an optional step; the application can be also run directly by executing satadd.py script. The advantage of having it installed is being able to execute satadd as any command line tool. I recommend installation within virtual environment. If you don't want to install, browse into the satadd folder and try <code>python satadd.py</code> to get to the same result.</p>
 <h2 id="getting-started">Getting started</h2>
-<p>To obtain help for a specific functionality, simply call it with <em>help</em>
-switch, e.g.: <code>arcticdem demextract -h</code>. If you didn't install arcticdem, then you
-can run it just by going to <em>arcticdem-cli</em> directory and running <code>python
-arcticdem.py [arguments go here]</code></p>
-<p>As usual, to print help  <code>arcticdem -h</code>:</p>
-<pre><code>ArcticDEM Batch Download &amp; Processing Tools
+<p>As usual, to print help:</p>
+<pre><code>usage: satadd.py [-h]
+                 {planetkey,dginit,satinit,eeinit,dasync,savedsearch,metadata,simple_search,footprint,satraster,satmeta,metalist,reproject,refresh,idsearch,intersect,band
+type,export}
+                 ...
+
+Simple CLI for piping Planet, Satellogic,GEE &amp; GBDX Assets
+
 positional arguments:
-  { ,demaoi,demsize,demdownload,demextract,demmeta}
-                        ---------------------------------------
-                        -----Choose from ArcticDEM-Download Tools Below-----
-                        ---------------------------------------
-    demaoi              Allows user to subset Master ArcticDEM to their AOI
-    demsize             Allows users to estimate total download size and space
-                        left in your destination folder
-    demdownload         Allows users to batch download ArcticDEM Strips using
-                        aoi shapefile
-    demextract          Allows users to extract both image and metadata files
-                        from the zipped tar files
-    demmeta             Tool to process metadata files into CSV for all
-                        strips[For use with Google Earth Engine]
+  {planetkey,dginit,satinit,eeinit,dasync,savedsearch,metadata,simple_search,footprint,satraster,satmeta,metalist,reproject,refresh,idsearch,intersect,bandtype,export}
+    planetkey           Setting up planet API Key
+    dginit              Initialize Digital Globe GBDX
+    satinit             Initialize Satellogic Tokens
+    eeinit              Initialize Google Earth Engine
+    credrefresh         Refresh Satellogic &amp; GBDX tokens
+
+
+    dasync              Uses the Planet Client Async Downloader to download Planet Assets: Does not require activation
+    savedsearch         Tool to download saved searches from Planet Explorer
+    metadata            Tool to tabulate and convert all metadata files from Planet
+                        Item and Asset types for Ingestion into GEE
+
+
+    simple_search       Simple search to look for DG assets that intersect your AOI handles KML/SHP/GEOJSON
+    metadata            Exports metadata for simple search into constitutent folders as JSON files
+    footprint           Exports footprint for metadata files extracted earlier
+                        and converts them to individual geometries (GeoJSON)and combined geometry (GeoJSON) file
+
+
+    satraster           Filter and download Satellogic Imagery
+    satlist             Get url for band list based on filtered Satellogic Imagery
+    multiproc           Multiprocess based downloader based on satlist
+    satmeta             Filter and download Satellogic Metadata
+    metalist            Generates Basic Metadata list per scene for Satellogic Imagery
+    reproject           Batch reproject rasters using EPSG code
+
+
+    eerefresh           Refreshes your personal asset list and GEE Asset list
+    idsearch            Does possible matches using asset name to give you asseth id/full path
+    intersect           Exports a report of all assets(Personal &amp; GEE) intersecting with provided geometry
+    bandtype            Prints GEE bandtype and generates list to be used for export
+    export              Export GEE Collections based on filter
 
 optional arguments:
   -h, --help            show this help message and exit
 </code></pre>
 
-<h2 id="subset-to-aoi">Subset to AOI</h2>
-<p>The script clips the master ArcticDEM strip file to a smaller subset usgin an area of interest shapefile. This allows to get the strip DEM(s) for only the area of interest and to use that to download these files. The subset allows the user to limit the total amount of strips to be downloaded and processed. The script will create a new shapefile with the clipped subset of the master ArcticDEM strip file. </p>
-<p><strong>Make sure you reproject your aoi shapefile to the same projection as the ArcticDEM strip file</strong> </p>
-<pre><code>usage: arcticdem.py demaoi [-h] [--source SOURCE] [--target TARGET]
-                           [--output OUTPUT]
-
-optional arguments:
-  -h, --help       show this help message and exit
-  --source SOURCE  Choose location of your AOI shapefile
-  --target TARGET  Choose the location of the master ArcticDEM strip file
-  --output OUTPUT  Choose the location of the output shapefile based on your
-                   AOI
+<p>To obtain help for a specific functionality, simply call it with <em>help</em> switch, e.g.: <code>satadd idsearch -h</code>. If you didn't install satadd, then you can run it just by going to <em>satadd</em> directory and running <code>python satadd.py [arguments go here]</code></p>
+<h3 id="satadd-satellite-data-download-addon">satadd Satellite Data Download Addon</h3>
+<p>This tool is designed to augment to the existing facilty of image export using a CLI, whereby you can pass it arguments to filter based on an area of interest geojson file, a start and end date for collection</p>
+<p><img alt="cli" src="/images/satadd.jpg" /></p>
+<h3 id="initialize-and-authenticate">Initialize and Authenticate</h3>
+<p>This is an autosuggestive terminal which uses the gee2add package to perform all of the functions but has autosuggest for Earth Engine catalog and your own personal catalog. This way you can get access to image id without needing the catalog id in the javascript codeeditor.</p>
+<pre><code>planetkey           Setting up planet API Key
+dginit              Initialize Digital Globe GBDX
+satinit             Initialize Satellogic Tokens
+eeinit              Initialize Google Earth Engine
+credrefresh         Refresh Satellogic &amp; GBDX tokens
 </code></pre>
 
-<p>An example setup would be</p>
-<pre><code>arcticdem demaoi --source &quot;C:\users\aoi.shp&quot; --target &quot;C:\users\masterdem.shp&quot; --output &quot;C:\users\master_aoi.shp&quot;
+<p>Each of these authentication tools allow you to link and save credentials for each of these services you can check them by typing something like <code>satadd planetkey</code>. Certain services require the authentication tokens to be refreshed you can simply access it using <code>satadd credrefresh</code>.</p>
+<h3 id="planet-tools">Planet Tools</h3>
+<p>The Planet Toolsets consists of tools required to access control and download planet labs assets (PlanetScope and RapidEye OrthoTiles) as well as parse metadata in a tabular form which maybe required by other applications. These tools are designed to interact with <a href="https://pypi.org/project/planet/">Planet's Python Client</a> and the saved search featured embedded in <a href="https://www.planet.com/explorer/">Planet Explorer</a> and will allow you to access and download planet imagery and metadata as needed. This also allows you to process the metadata incase you are ingesting this to GEE.</p>
+<pre><code>dasync              Uses the Planet Client Async Downloader to download Planet Assets: Does not require activation
+savedsearch         Tool to download saved searches from Planet Explorer
+metadata            Tool to tabulate and convert all metadata files from Planet
+                    Item and Asset types for Ingestion into GEE
 </code></pre>
 
-<h3 id="estimate-download-size">Estimate Download Size</h3>
-<p>One of the most common things you want to do is to know if the destination where you want to save these files has enough space before you begin the download process. This script allows you to query the total download size for your area of interest and the destination drive where you want to save the compressed files. It also recursively updates overall download size on the screen and print total size needed along with total download size in GB.</p>
-<pre><code>usage: arcticdem.py demsize [-h] [--infile INFILE] [--path PATH]
-
-optional arguments:
-  -h, --help       show this help message and exit
-  --infile INFILE  Choose the clipped aoi file you clipped from demaoi
-                   tool[This is the subset of the master ArcticDEM Strip]
-  --path PATH      Choose the destination folder where you want your dem files
-                   to be saved[This checks available disk space]
+<h3 id="gbdx-tools">GBDX Tools</h3>
+<p>This is a simple cli to Digital Globe's GBDX platform, this was designed from the perspective of community user (the freely available tier). This platform allows you to access all of DG's Open data and also open Ikonos data along with Landsat and Sentinel datasets. You can create a <a href="https://notebooks.geobigdata.io">notebook acccount here</a>. The notebook setup offers additional tools, a GUI and interactive framework while CLI simplifies some of the operational needs of batch processing and performing calls using your own local machine. This tool will allow you to perform a simple seach using a geometry to get asset summary, export the metadata as json file and also image footprint as a combined and individual geojson files.</p>
+<pre><code>simple_search       Simple search to look for DG assets that intersect your AOI handles KML/SHP/GEOJSON
+metadata            Exports metadata for simple search into constitutent folders as JSON files
+footprint           Exports footprint for metadata files extracted earlier
+                    and converts them to individual geometries (GeoJSON)and combined geometry (GeoJSON) file
 </code></pre>
 
-<p>An example setup would be</p>
-<pre><code>arcticdem demsize --infile &quot;C:\users\master_aoi.shp&quot; --path &quot;C:\users\ArcticDEM&quot;
+<h3 id="satellogic-tools">Satellogic Tools</h3>
+<p>This tool allows you to access the <a href="https://github.com/satellogic/open-impact">open data shared by Satellogic</a> and filter and pass a geometry object to get both micro(multiband) and macro (hyperspectral) rasters, metadata and basic metadalist. The download tool is a multipart downloader to handle quick downloads. The metalist tool can be used to create a simple metadata list for you to batch upload imagery into GEE for analysis. The reproject tool is included to handle batch reprojections as needed. The tool uses geometry passed as a geojson object go to <a href="http://geojson.io">geojson.io</a>. Satlist produces the band list urls and you can then use the multiproc tool to use multiprocessing to download the links.</p>
+<pre><code>satraster           Filter and download Satellogic Imagery
+satlist             Get url for band list based on filtered Satellogic Imagery
+multiproc           Multiprocess based downloader based on satlist
+satmeta             Filter and download Satellogic Metadata
+metalist            Generates Basic Metadata list per scene for Satellogic Imagery
+reproject           Batch reproject rasters using EPSG code
 </code></pre>
 
-<p>The program might misbehave if the area of interest is extremely large or be sluggish in nature.</p>
-<h2 id="download-dem">Download DEM</h2>
-<p>What we were mainly interested after we know that we have enough space to download is to download the files. The script used a multi part download library to download the files quicker and in a more managed style to the destination given by the user.</p>
-<pre><code>usage: arcticdem.py demdownload [-h] [--subset SUBSET]
-                                [--desination DESINATION]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --subset SUBSET       Choose the location of the output shapefile based on
-                        your AOI[You got this from demaoi tool]
-  --desination DESINATION
-                        Choose the destination where you want to download your
-                        files
+<h3 id="gee-tools">GEE Tools</h3>
+<p>This tool allows you to use the gee2drive tool functionalities to explore, match and export existing collections in GEE. Export requires all the bandtypes to be of the same kind. For the past couple of months I have <a href="https://github.com/samapriya/Earth-Engine-Datasets-List">maintained a catalog of the most current Google Earth Engine assets</a>, within their raster data catalog. I update this list every week. This tool downloads the most current version of this list, and allows the user to explore band types and export a collection as needed.</p>
+<pre><code>eerefresh           Refreshes your personal asset list and GEE Asset list
+idsearch            Does possible matches using asset name to give you asseth id/full path
+intersect           Exports a report of all assets(Personal &amp; GEE) intersecting with provided geometry
+bandtype            Prints GEE bandtype and generates list to be used for export
+export              Export GEE Collections based on filter
 </code></pre>
 
-<p>An example setup would be</p>
-<pre><code>arcticdem demdownload --subset &quot;C:\users\master_aoi.shp&quot; --destination &quot;C:\users\ArcticDEM&quot;
-</code></pre>
-
-<h2 id="extract-dem">Extract DEM</h2>
-<p>This downloaded DEM files are tar or tar gz files and need to be extracted. The important thing to note is that the script retains the dem file, the matchtag file and the metadata text files in separate directories within the destination directory. </p>
-<pre><code>usage: arcticdem.py demextract [-h] [--folder FOLDER]
-                               [--destination DESTINATION] [--action ACTION]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --folder FOLDER       Choose the download file where you downloaded your tar
-                        zipped files
-  --destination DESTINATION
-                        Choose the destination folder where you want your
-                        images and metadata files to be extracted
-  --action ACTION       Choose if you want your zipped files to be deleted
-                        post extraction &quot;yes&quot;|&quot;no&quot;
-</code></pre>
-
-<p>An example setup would be</p>
-<pre><code>arcticdem demdextract --folder &quot;C:\users\ArcticDEM&quot; --destination &quot;C:\users\ArcticDEM\Extract&quot; --action &quot;yes&quot;
-</code></pre>
-
-<h2 id="metadata-parsing-for-gee">Metadata Parsing for GEE</h2>
-<p>One of my key interest in working on the ArcticDEM parsing was to be able to upload this to Google Earth Engine(GEE). The metadata parser script allows you to parse all metadata into a combined csv file to be used to upload images to GEE. The manifest and upload tools are separate from this package tool and included in my gee_asset_manager_addon.</p>
-<pre><code>usage: arcticdem.py demmeta [-h] [--folder FOLDER] [--metadata METADATA]
-                            [--error ERROR]
-
-optional arguments:
-  -h, --help           show this help message and exit
-  --folder FOLDER      Choose where you unzipped and extracted your DEM and
-                       metadata files
-  --metadata METADATA  Choose a path to the metadata file &quot;example:
-                       users/desktop/metadata.csv&quot;
-  --error ERROR        Choose a path to the errorlog file &quot;example:
-                       users/desktop/errorlog.csv&quot;
-</code></pre>
-
-<p>An example setup would be</p>
-<pre><code>arcticdem demmeta --folder &quot;C:\users\ArcticDEM\Extract\pgcmeta&quot; --metadata &quot;C:\users\arcticdem_metadata.csv&quot; --error &quot;C:\users\arcticdem_errorlog.csv&quot;
-</code></pre>
-
-<h1 id="changelog">Changelog</h1>
-<h2 id="011-2017-08-12">[0.1.1] - 2017-08-12</h2>
-<h3 id="added">Added</h3>
+<h2 id="changelog">Changelog</h2>
+<h3 id="v004">v0.0.4</h3>
 <ul>
-<li>Can now handle ogr input and includes instruction to project aoi in same projection as DEM strip.</li>
-<li>Added the capability of skipping over already downloaded files and continues with left over downloads.</li>
-<li>Completed recompiling executable to include changes.</li>
+<li>Fixed issue with Shapely install on windows</li>
+<li>Updated credrefresh to better refresh gbdx tokens</li>
+</ul>
+<h3 id="v003">v0.0.3</h3>
+<ul>
+<li>Added better filename parsing for Satellogic images</li>
+<li>Added error handling for multiprocessing download of Satellogic images</li>
+</ul>
+<h3 id="v002">v0.0.2</h3>
+<ul>
+<li>Now searches for all DG and non DG assets available within GBDX</li>
+<li>Added capability to create url list for rasters and download support using multiprocessing</li>
 </ul>
                 
                   
@@ -1151,7 +1213,7 @@ optional arguments:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../pydrop/" title="pydrop Minimal Digital Ocean CLI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../pypi/" title="PyPI Projects" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1160,19 +1222,19 @@ optional arguments:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                pydrop Minimal Digital Ocean CLI
+                PyPI Projects
               </span>
             </div>
           </a>
         
         
-          <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                ArcMap Addon Tools
+                Simple CLI for Google Earth Engine Uploads
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
