@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -401,7 +376,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -523,7 +510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -796,7 +783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -1092,7 +1079,7 @@ sudo apt-get install python-wxgtk3.0
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../clip_ship_planet_cli/" title="Clip Ship Planet CLI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1101,7 +1088,7 @@ sudo apt-get install python-wxgtk3.0
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Clip Ship Planet CLI
+                Planet Batch Slack Pipeline
               </span>
             </div>
           </a>

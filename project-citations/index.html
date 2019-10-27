@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -399,7 +374,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../projects/ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../projects/geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -519,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../projects/planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -699,7 +686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../projects/arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -851,107 +838,81 @@
                 
                 
                 <h1 id="project-citations">Project Citations</h1>
-<p><strong>geeup: Simple Google Earth Engine Upload Tool</strong></p>
-<p><a href="https://doi.org/10.5281/zenodo.1344130"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1344130.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, August 12). samapriya/geeup: geeup: Simple CLI for Earth Engine Uploads (Version 0.0.3).
-Zenodo. http://doi.org/10.5281/zenodo.1344130
-
+<p><strong>porder: Simple CLI for Planet ordersV2 API</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, October 24). samapriya/porder: porder: Simple CLI for Planet ordersV2 API (Version 0.5.2). Zenodo. http://doi.org/10.5281/zenodo.3518295&quot;
 </code></pre>
 
-<p><strong>gee2drive: Simple CLI to download Earth Engine Assets</strong></p>
-<p><a href="https://doi.org/10.5281/zenodo.1324470"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1324470.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, July 31). samapriya/gee2drive: gee2drive: Google Earth Engine to Drive Export Manager (Version 0.0.5).
-Zenodo. http://doi.org/10.5281/zenodo.1324470
+<p><strong>neon-science-summit-2019</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, October 14). samapriya/neon-science-summit-2019: neon-science-summit-2019 (Version 0.1). Zenodo. http://doi.org/10.5281/zenodo.3484160&quot;
 </code></pre>
 
-<p><strong>pydrop: Simple Python CLI for Digital Ocean Droplets</strong></p>
-<p><a href="https://doi.org/10.5281/zenodo.1323340"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1323340.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, July 29). samapriya/pydrop: pydrop: Minimal Python Client for Digital Ocean Droplets (Version 0.0.3).
-Zenodo. http://doi.org/10.5281/zenodo.1323340
+<p><strong>Planet-GEE-Pipeline-CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, October 10). samapriya/Planet-GEE-Pipeline-CLI: Planet-GEE-Pipeline-CLI (Version 0.4.8). Zenodo. http://doi.org/10.5281/zenodo.3479525&quot;
+</code></pre>
 
+<p><strong>GEE Asset Manager Addons</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, October 6). samapriya/gee_asset_manager_addon: GEE Asset Manager with Addons (Version 0.3.3). Zenodo. http://doi.org/10.5281/zenodo.3474295&quot;
+</code></pre>
+
+<p><strong>geeup: GEE Upload CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, October 4). samapriya/geeup: geeup: Simple CLI for Earth Engine Uploads (Version 0.3.1). Zenodo. http://doi.org/10.5281/zenodo.3473534&quot;
+</code></pre>
+
+<p><strong>pobatch: porder wrapper for Ordersv2 Batch Client</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, August 26). samapriya/pobatch: pobatch: porder wrapper for Ordersv2 Batch Client (Version 0.0.7). Zenodo. http://doi.org/10.5281/zenodo.3376975&quot;
+</code></pre>
+
+<p><strong>pbasemap: Planet Mosaic Quads Download CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2019, June 25). samapriya/Planet-Mosaic-Quads-Download-CLI: Planet Mosaic Quads Download CLI (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.3255274&quot;
+</code></pre>
+
+<p><strong>gee2drive: GEE Download CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2018, August 25). samapriya/gee2drive: gee2drive: Google Earth Engine to Drive Export Manager (Version 0.0.7). Zenodo. http://doi.org/10.5281/zenodo.1403657&quot;
+</code></pre>
+
+<p><strong>pydrop: Digital Ocean CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2018, July 29). samapriya/pydrop: pydrop: Minimal Python Client for Digital Ocean Droplets (Version 0.0.3). Zenodo. http://doi.org/10.5281/zenodo.1323340&quot;
 </code></pre>
 
 <p><strong>Google Earth Engine Account Transfer Tool</strong></p>
-<p><a href="https://doi.org/10.5281/zenodo.1185158"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1185158.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, February 27). samapriya/gee-takeout: Google Earth Engine Account Transfer Tool (Version 0.1).
-Zenodo. http://doi.org/10.5281/zenodo.1185158
+<pre><code>&quot;Samapriya Roy. (2018, February 27). samapriya/gee-takeout: Google Earth Engine Account Transfer Tool (Version 0.1). Zenodo. http://doi.org/10.5281/zenodo.1185158&quot;
 </code></pre>
 
-<p><strong>Planet-Batch-Slack-Pipeline-CLI</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/104376158"><img alt="DOI" src="https://zenodo.org/badge/104376158.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, December 4). samapriya/Planet-Batch-Slack-Pipeline-CLI: Planet-Batch-Slack-Pipeline-CLI (Version 0.1.4).
-Zenodo. http://doi.org/10.5281/zenodo.1079887
-</code></pre>
-
-<p>&nbsp;</p>
 <p><strong>Clip-Ship-Planet-CLI</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/102645282"><img alt="DOI" src="https://zenodo.org/badge/102645282.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, June 30). samapriya/Clip-Ship-Planet-CLI: Clip-Ship-Batch Planet Command Line Interface (Version 0.2.5).
-Zenodo. http://doi.org/10.5281/zenodo.1302068
-
+<pre><code>&quot;Samapriya Roy. (2018, June 30). samapriya/Clip-Ship-Planet-CLI: Clip-Ship-Batch Planet Command Line Interface (Version 0.2.5). Zenodo. http://doi.org/10.5281/zenodo.1302068&quot;
 </code></pre>
 
-<p>&nbsp;</p>
 <p><strong>Slack-Notifier-CLI-Addon</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/102524939"><img alt="DOI" src="https://zenodo.org/badge/102524939.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, September 5). samapriya/Slack-Notifier-CLI-Addon: Slack Notifier-CLI Addon (Version 0.1.0).
-Zenodo. http://doi.org/10.5281/zenodo.885505
+<pre><code>&quot;Samapriya Roy. (2017, September 5). samapriya/Slack-Notifier-CLI-Addon: Slack Notifier-CLI Addon (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.885505&quot;
 </code></pre>
 
-<p>&nbsp;</p>
-<p><strong>Planet-GEE-Pipeline-CLI</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/90417237"><img alt="DOI" src="https://zenodo.org/badge/90417237.svg" /></a></p>
-<pre><code>Samapriya Roy. (2018, August 8). samapriya/Planet-GEE-Pipeline-CLI: Planet-GEE-Pipeline-CLI (Version 0.3.9).
-Zenodo. http://doi.org/10.5281/zenodo.1341565
-</code></pre>
-
-<p>&nbsp;</p>
 <p><strong>Planet-GEE-Pipeline-GUI</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/95319905"><img alt="DOI" src="https://zenodo.org/badge/95319905.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, June 25). samapriya/Planet-GEE-Pipeline-GUI:Planet-GEE-Pipeline-GUI (Version 0.1.4).
-Zenodo. http://doi.org/10.5281/zenodo.817739
+<pre><code>&quot;Samapriya Roy. (2017, June 25). samapriya/Planet-GEE-Pipeline-GUI: Planet-GEE-Pipeline-GUI (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.817739&quot;
 </code></pre>
 
-<p>&nbsp;</p>
 <p><strong>Planet-Pipeline-GUI</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/90283954"><img alt="DOI" src="https://zenodo.org/badge/90283954.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, August 17). samapriya/Planet-Pipeline-GUI: Planet-Pipeline-GUI (Version 0.3).
-Zenodo. http://doi.org/10.5281/zenodo.844149
+<pre><code>&quot;Samapriya Roy. (2017, August 17). samapriya/Planet-Pipeline-GUI: Planet-Pipeline-GUI (Version 0.3). Zenodo. http://doi.org/10.5281/zenodo.844149&quot;
 </code></pre>
 
-<p>&nbsp;</p>
-<p><strong>GEE Asset Manager Addons</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/87708514"><img alt="DOI" src="https://zenodo.org/badge/87708514.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, November 29). samapriya/gee_asset_manager_addon: GEE Asset Manager with Addons (Version 0.2.2).
-Zenodo. http://doi.org/10.5281/zenodo.1068184
-</code></pre>
-
-<p>&nbsp;</p>
-<p><strong>Synthetic LandScape Models</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/91218285"><img alt="DOI" src="https://zenodo.org/badge/91218285.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, May 21). samapriya/synthetic-landScape-generation-nlm: Synthetic LandScape Generation (Version 0.1.1).
-Zenodo. http://doi.org/10.5281/zenodo.581701
-</code></pre>
-
-<p>&nbsp;</p>
 <p><strong>ArcMap Addons</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/90535170"><img alt="DOI" src="https://zenodo.org/badge/90535170.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, October 12). samapriya/arcmap-addons: ArcMap Addons (Version 0.2).
-Zenodo. http://doi.org/10.5281/zenodo.1009210
+<pre><code>&quot;Samapriya Roy. (2017, October 12). samapriya/arcmap-addons: ArcMap Addons (Version 0.2). Zenodo. http://doi.org/10.5281/zenodo.1009210&quot;
+ArcticDEM-Batch-Pipeline,&quot;Samapriya Roy. (2018, May 3). samapriya/ArcticDEM-Batch-Pipeline: ArcticDEM-Batch-Pipeline (Version 0.1.2). Zenodo. http://doi.org/10.5281/zenodo.1240456&quot;
 </code></pre>
 
-<p>&nbsp;</p>
-<p><strong>ArcticDEM-Batch-Pipeline</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/99892717"><img alt="DOI" src="https://zenodo.org/badge/99892717.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, August 12). samapriya/ArcticDEM-Batch-Pipeline: ArcticDEM-Batch-Pipeline (Version 0.1.1).
-Zenodo. http://doi.org/10.5281/zenodo.842056
-</code></pre>
-
-<p>&nbsp;</p>
 <p><strong>Jetstream-Unofficial-addon</strong></p>
-<p><a href="https://zenodo.org/badge/latestdoi/100454899"><img alt="DOI" src="https://zenodo.org/badge/100454899.svg" /></a></p>
-<pre><code>Samapriya Roy. (2017, August 16). samapriya/jetstream-unofficial-addon: jetstream-unofficial-addon (Version 0.1.1).
-Zenodo. http://doi.org/10.5281/zenodo.844018
+<pre><code>&quot;Samapriya Roy. (2018, March 12). samapriya/jetstream-unofficial-addon: jetstream-unofficial-addon (Version 0.1.2). Zenodo. http://doi.org/10.5281/zenodo.1196653&quot;
+</code></pre>
+
+<p><strong>Planet-Batch-Slack-CLI</strong></p>
+<pre><code>&quot;Samapriya Roy. (2017, December 4). samapriya/Planet-Batch-Slack-Pipeline-CLI: Planet-Batch-Slack-Pipeline-CLI (Version 0.1.4). Zenodo. http://doi.org/10.5281/zenodo.1079887&quot;
+</code></pre>
+
+<p><strong>satadd: CLI pipeline for Planet, Satellogic, Google Earth Engine and Digital Globe Imagery</strong></p>
+<pre><code>&quot;Samapriya Roy. (2018, October 6). samapriya/satadd: satadd: CLI pipeline for Planet, Satellogic, Google Earth Engine and Digital Globe Imagery (Version 0.0.3). Zenodo. http://doi.org/10.5281/zenodo.1450622&quot;
+</code></pre>
+
+<p><strong>pygbdx: Simple CLI for Digital Globe GBDX</strong></p>
+<pre><code>&quot;Samapriya Roy. (2018, October 4). samapriya/pygbdx: pygbdx: Simple CLI for GBDX (Version 0.0.2). Zenodo. http://doi.org/10.5281/zenodo.1445734&quot;
 </code></pre>
                 
                   

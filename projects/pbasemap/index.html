@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -401,7 +376,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -543,6 +530,34 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v010" class="md-nav__link">
+    v0.1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v008" class="md-nav__link">
+    v0.0.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v007" class="md-nav__link">
+    v0.0.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v005" class="md-nav__link">
+    v0.0.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v004" class="md-nav__link">
     v0.0.4
   </a>
@@ -595,7 +610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -775,7 +790,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -937,6 +952,34 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v010" class="md-nav__link">
+    v0.1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v008" class="md-nav__link">
+    v0.0.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v007" class="md-nav__link">
+    v0.0.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v005" class="md-nav__link">
+    v0.0.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v004" class="md-nav__link">
     v0.0.4
   </a>
@@ -967,23 +1010,30 @@
                   <a href="https://github.com/samapriya/edit/master/docs/projects/pbasemap.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="planet-mosaic-quads-download-cli">Planet-Mosaic-Quads-Download-CLI</h1>
+                <h1 id="planet-mosaic-quads-download-cli"><a href="https://github.com/samapriya/Planet-Mosaic-Quads-Download-CLI">Planet-Mosaic-Quads-Download-CLI</a></h1>
 <p><a href="https://badge.fury.io/py/pbasemap"><img alt="PyPI version" src="https://badge.fury.io/py/pbasemap.svg" /></a>
-<a href="https://doi.org/10.5281/zenodo.1432872"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1432872.svg" /></a></p>
+<a href="https://doi.org/10.5281/zenodo.3255274"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3255274.svg" /></a></p>
 <p>Planet creates global monthly mosaics apart from creating mosaics at different frequencies, monthly mosaics are of interest to a lot of people who would like to do a consistent time series analysis using these mosaics and would like to apply them to an existing analytical pipeline. I created this tool to allow you pass single or multiple geometries in a folder for the tool to find the mosaic quads and then process and download it. For now the geometry is passed as a geojson file, but I have included a tool for you to convert any shapefile into geojson files so you can use this tool. In the future I will add support for kml and json files as well.</p>
+<p>You can cite the tool using the following or from <a href="https://zenodo.org/record/3255274">this link</a></p>
+<pre><code>Samapriya Roy. (2019, June 25). samapriya/Planet-Mosaic-Quads-Download-CLI: Planet Mosaic Quads Download CLI (Version 0.1.0). Zenodo.
+http://doi.org/10.5281/zenodo.3255274
+</code></pre>
+
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
 <li><a href="#installation">Installation</a></li>
 <li><a href="#getting-started">Getting started</a></li>
 <li><a href="#pbasemap-planet-mosaic-quads-download-cli">pbasemap Planet Mosaic Quads Download CLI</a><ul>
+<li><a href="#bounding-box">bounding box</a></li>
 <li><a href="#mosaic-list">mosaic list</a></li>
 <li><a href="#download-mosaic">download mosaic</a></li>
-<li><a href="#download-mosaic-metadata">download mosaic metadata</a></li>
+<li><a href="#multipart-download-mosaic">multipart download mosaic</a></li>
 <li><a href="#shape-to-geojson">shape to geojson</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="installation">Installation</h2>
+<p><strong> Install Fiona and GDAL for windows using the whl files <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">here</a></strong> if there are any issues during installation.</p>
 <p>This assumes that you have native python &amp; pip installed in your system, you can test this by going to the terminal (or windows command prompt) and trying</p>
 <p><code>python</code> and then <code>pip list</code></p>
 <p>If you get no errors and you have python 2.7.14 or higher you should be good to go. Please note that I have tested this only on python 2.7.15 but it should run on python 3.</p>
@@ -999,62 +1049,84 @@ python setup.py install
 <p>Installation is an optional step; the application can be also run directly by executing pbasemap.py script. The advantage of having it installed is being able to execute ppipe as any command line tool. I recommend installation within virtual environment. If you don't want to install, browse into the pbasemap folder and try <code>python pbasemap.py</code> to get to the same result.</p>
 <h2 id="getting-started">Getting started</h2>
 <p>As usual, to print help:</p>
-<pre><code>pbasemap -h
-usage: pbasemap [-h]
-              {mosaic_list,download_quad,download_metadata,shp2geojson} ...
+<pre><code>usage: pbasemap.py [-h] {rbox,mosaic_list,download,mpdownload,shp2geojson} ...
 
 Planet Mosaic Quads Download CLI
 
 positional arguments:
-  {mosaic_list,download_quad,download_metadata,shp2geojson}
+  {rbox,mosaic_list,download,mpdownload,shp2geojson}
+    rbox                Prints bounding box for geometry
     mosaic_list         Tool to get Mosaic &amp; Bounding Box list
-    download_quad       Download quad GeoTiffs
-    download_metadata   Download Quad Metadata
+    download            Download quad GeoTiffs choose from name or idlist
+    mpdownload          Download quad GeoTiffs using multipart downloader
     shp2geojson         Convert all shapefiles in folder to GeoJSON
 
 optional arguments:
   -h, --help            show this help message and exit
   ```
 
-To obtain help for a specific functionality, simply call it with _help_ switch, e.g.: `pbasemap zipshape -h`. If you didn't install pbasemap, then you can run it just by going to *pbasemap* directory and running `python pbasemap.py [arguments go here]`
+To obtain help for a specific functionality, simply call it with _help_ switch, e.g.: `pbasemap shp2geojson -h`. If you didn't install pbasemap, then you can run it just by going to *pbasemap* directory and running `python pbasemap.py [arguments go here]`
 
-## pbasemap Simple CLI for Earth Engine Uploads
-The tool allows you to mass both single and multiple geometries and processes mosaics within a yearly range. Meaning it will download all monthly mosaics within a year. A finer control will not be implemented since this is designed to be part of a larger yearly assessment toolchain. But a user can go into the idl.csv file created by the tool and remove the rows with the mosaics they do not want to be downloaded.
+## pbasemap Simple CLI for Basemaps API
+The tool allows you to list and download basemap quads that instersect with area of interest, and have controls such as date range and check for final coverage before download. The CLI also allows you to export the mosaics list as needed and can handle GeoJSON and KML files, and includes a tool to convert shapefiles to GeoJSON files for use with this tool.
 
-### mosaic list
-This tool allows you to pass a folder with geojson geometries for which you want the mosaic quads to be downloaded. It then creates an internal list to be used by the downloader to then download your mosaic quads.
-
-</code></pre>
-
-<p>usage: pbasemap mosaic_list [-h] [--local LOCAL] [--start START] [--end END]</p>
-<p>optional arguments:
-  -h, --help     show this help message and exit
-  --local LOCAL  Choose folder with geojson files
-  --start START  Choose Start Year
-  --end END      Choose End Year</p>
-<pre><code>
-### download mosaic
-As the name suggests this downloads your mosaic to the local folder you specify, you can specify how much coverage you want over your geometry and over the quad. So you may decide to only download those mosaic quads that have coverage more than 90% by simply specifying ```--coverage &quot;90&quot;``` in the arguments.
+### bounding box
+This tool simply prints the bounding box for any geometry feature that is passed. This is useful if you are using the planet CLI to downlaod quads which requires a bounding box.It prints out the bounding box for use.
 
 </code></pre>
 
-<p>usage: pbasemap download_quad [-h] [--local LOCAL] [--coverage COVERAGE]</p>
+<p>usage: pbasemap.py rbox [-h] [--geometry GEOMETRY]</p>
 <p>optional arguments:
   -h, --help           show this help message and exit
-  --local LOCAL        Choose folder to download images
-  --coverage COVERAGE  Choose minimum percentage coverage</p>
+  --geometry GEOMETRY  Choose a geometry file supports GeoJSON, KML</p>
 <pre><code>
-### download mosaic metadata
-Though typically the mosaic quads don't come with metadata, I decided to create metadata using the json response and some of the custom fields I though would be useful and this tool allows you to download that. This does not require geometry and exports only the global
+### mosaic list
+This tool exports the mosaics name, id that intersect with your bounding box for your geometry. This can then be used to download the quads.
 
 </code></pre>
 
-<p>usage: pbasemap download_metadata [-h] [--start START] [--end END]</p>
+<p>usage: pbasemap.py mosaic_list [-h] [--geometry GEOMETRY] [--start START]
+                               [--end END] [--output OUTPUT]</p>
 <p>optional arguments:
-  -h, --help     show this help message and exit
-  --start START  Choose Start Year
-  --end END      Choose End Year
-  --local LOCAL  Full path where you want the metadata exported</p>
+  -h, --help           show this help message and exit
+  --geometry GEOMETRY  Choose a geometry file supports GeoJSON, KML
+  --start START        Choose Start date in format YYYY-MM-DD
+  --end END            Choose End date in format YYYY-MM-DD
+  --output OUTPUT      Full path where you want your mosaic list exported</p>
+<pre><code>
+### download mosaic
+As the name suggests this downloads your mosaic to the local folder you specify, you can specify how much coverage you want over your geometry and over the quad. So you may decide to only download those mosaic quads that have coverage more than 90% by simply specifying ```--coverage 90``` in the arguments. Once you create the list of mosaics that intersect with your geometry, you should be able to use the idlist option to export them all. Since L15 qauds can have the same name, the name of the mosaic is prepended to the filename.
+
+</code></pre>
+
+<p>usage: pbasemap.py download [-h] [--geometry GEOMETRY] [--local LOCAL]
+                            [--coverage COVERAGE] [--name NAME]
+                            [--idlist IDLIST]</p>
+<p>optional arguments:
+  -h, --help           show this help message and exit
+  --geometry GEOMETRY  Choose a geometry file supports GeoJSON, KML
+  --local LOCAL        Local folder to download images</p>
+<p>Optional named arguments:
+  --coverage COVERAGE  Choose minimum percentage coverage
+  --name NAME          Mosaic name from earlier search or csvfile
+  --idlist IDLIST      Mosaic list csvfile</p>
+<pre><code>
+### multipart download mosaic
+This uses a multipart downloader to download your mosaic to the local folder you specify, you can specify how much coverage you want over your geometry and over the quad. So you may decide to only download those mosaic quads that have coverage more than 90% by simply specifying ```--coverage 90``` in the arguments.Once you create the list of mosaics that intersect with your geometry, you should be able to use the idlist option to export them all. Since L15 qauds can have the same name, the name of the mosaic is prepended to the filename.
+
+</code></pre>
+
+<p>usage: pbasemap.py mpdownload [-h] [--geometry GEOMETRY] [--local LOCAL]
+                              [--coverage COVERAGE] [--name NAME]
+                              [--idlist IDLIST]</p>
+<p>optional arguments:
+  -h, --help           show this help message and exit
+  --geometry GEOMETRY  Choose a geometry file supports GeoJSON, KML
+  --local LOCAL        Local folder to download images</p>
+<p>Optional named arguments:
+  --coverage COVERAGE  Choose minimum percentage coverage
+  --name NAME          Mosaic name from earlier search or csvfile
+  --idlist IDLIST      Mosaic list csvfile</p>
 <pre><code>
 ### shape to geojson
 This tool allows you to convert from  a folder with multiple shapefiles to a folder with geojson that can then be used with the tool. It makes use of geopandas and reprojects your shapefile to make it compatible while passing onto the API for search and download.
@@ -1069,6 +1141,29 @@ This tool allows you to convert from  a folder with multiple shapefiles to a fol
                         Choose Destination Folder
 ```</p>
 <h2 id="changelog">Changelog</h2>
+<h3 id="v010">v0.1.0</h3>
+<ul>
+<li>Improvements to installation</li>
+<li>Now creates folders to download mosaic quads</li>
+<li>Fixed issue with multipart downloader</li>
+</ul>
+<h3 id="v008">v0.0.8</h3>
+<ul>
+<li>Minor improvements</li>
+<li>Checks for download permission</li>
+</ul>
+<h3 id="v007">v0.0.7</h3>
+<ul>
+<li>Updated feedback, major changes to the codebase and underlying methodology</li>
+<li>Optimized code for search and download</li>
+<li>Overall improvements to code and major revisions</li>
+</ul>
+<h3 id="v005">v0.0.5</h3>
+<ul>
+<li>Complete change to the codebase and underlying methodology</li>
+<li>Optimized code for search and download</li>
+<li>Overall improvements to code and major revisions</li>
+</ul>
 <h3 id="v004">v0.0.4</h3>
 <ul>
 <li>Fixed projection issue for shapefiles</li>

@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -399,7 +374,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -519,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -699,7 +686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -794,6 +781,27 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#planet-explore-2019-first-user-conference" class="md-nav__link">
+    Planet Explore 2019: First User Conference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-geo-for-good-2019-linking-stories-to-scales-through-data-and-platforms" class="md-nav__link">
+    Google Geo for Good 2019: Linking Stories to Scales: Through Data and Platforms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scipy-2019-hands-on-satellite-imagery-analysis" class="md-nav__link">
+    Scipy 2019: Hands-on Satellite Imagery Analysis
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#american-geophysical-union-fall-meeting-2018" class="md-nav__link">
@@ -912,6 +920,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#planet-explore-2019-first-user-conference" class="md-nav__link">
+    Planet Explore 2019: First User Conference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-geo-for-good-2019-linking-stories-to-scales-through-data-and-platforms" class="md-nav__link">
+    Google Geo for Good 2019: Linking Stories to Scales: Through Data and Platforms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scipy-2019-hands-on-satellite-imagery-analysis" class="md-nav__link">
+    Scipy 2019: Hands-on Satellite Imagery Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#american-geophysical-union-fall-meeting-2018" class="md-nav__link">
     American Geophysical Union Fall Meeting 2018
   </a>
@@ -981,6 +1010,17 @@
                 
                 <h1 id="open-impact-training-and-hackathons"><strong>Open Impact Training and Hackathons</strong></h1>
 <p>Open Impact projects include hackathons, training to support developer interaction and engagement of Education and Research users. You can click on the headings to go their page</p>
+<h3 id="planet-explore-2019-first-user-conference"><a href="https://www.eiseverywhere.com/website/3346/"><strong>Planet Explore 2019: First User Conference</strong></a></h3>
+<p>This was the first user conference for Planet, with over 500 participants , hours of ask me anything time and I got to teach two productive workshops.</p>
+<p><center><img alt="planetexplorelogoFINAL" src="https://user-images.githubusercontent.com/6677629/67629012-fc401200-f845-11e9-9fe8-4df8bb40ba68.png" /></center></p>
+<h3 id="google-geo-for-good-2019-linking-stories-to-scales-through-data-and-platforms"><a href="https://sites.google.com/earthoutreach.org/geoforgood19/home"><strong>Google Geo for Good 2019: Linking Stories to Scales: Through Data and Platforms</strong></a></h3>
+<p>Linking stories to scales talks to how users have used high resolution imagery and Google Earth Engine platform to work on problems and to tell stories.</p>
+<p><center><a href="http://www.youtube.com/watch?v=M8u2ZeXLFyM" title="Google Geo for Good 2019"><img alt="" src="http://img.youtube.com/vi/M8u2ZeXLFyM/0.jpg" /></a>
+</center></p>
+<h3 id="scipy-2019-hands-on-satellite-imagery-analysis"><a href="https://github.com/samapriya/remote-sensing-with-python"><strong>Scipy 2019: Hands-on Satellite Imagery Analysis</strong></a></h3>
+<p>Satellite data is more widely available than ever before, and it is now possible for the public to access sub-weekly and even daily imagery of the Earth's entire landmass. In this tutorial, gain hands-on experience exploring Planet’s publicly-available satellite imagery and using Python tools for geospatial and time-series analysis of medium- and high-resolution imagery data. Using free &amp; open source libraries, learn how to perform foundational imagery analysis techniques and apply these techniques to real satellite data. At the end of the workshop, we’ll demonstrate how the skills you've learned can be applied to investigate real-world environmental and humanitarian challenges.</p>
+<p><center><a href="http://www.youtube.com/watch?v=j15MryznWn4" title="Hands-on Satellite Imagery Analysis"><img alt="" src="http://img.youtube.com/vi/j15MryznWn4/0.jpg" /></a>
+</center></p>
 <h3 id="american-geophysical-union-fall-meeting-2018"><a href="https://samapriya.github.io/open-impact/agu2018/"><strong>American Geophysical Union Fall Meeting 2018</strong></a></h3>
 <p>AGU Scientific Workshop: Sensor Fusion and Analysis Ready Data with the Planet Platform (WS32)</p>
 <p><center><img alt="AGU2018_Talk" src="https://user-images.githubusercontent.com/6677629/67454708-408aa280-f5f9-11e9-9b46-a37d139ec538.png" /></center></p>

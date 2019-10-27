@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -401,7 +376,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -521,7 +508,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -796,7 +783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -1009,7 +996,7 @@
                   <a href="https://github.com/samapriya/edit/master/docs/projects/nsfsearch.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="nsfsearch-nsf-awards-api-simple-cli">nsfsearch: NSF Awards API Simple CLI</h1>
+                <h1 id="nsfsearch-nsf-awards-api-simple-cli"><a href="https://github.com/samapriya/nsfsearch">nsfsearch: NSF Awards API Simple CLI</a></h1>
 <p>This is an application based on the <a href="https://www.research.gov/common/webapi/awardapisearch-v1.htm">NSF Awards API</a>. While the NSF award search tool is great, this is useful to get some quick reports and statistics on NSF awards. It also does act as a quick search and ideally as NSF updates the API this tool will be updated to reflect changes.</p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>

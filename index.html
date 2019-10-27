@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -408,7 +383,19 @@
 
 
   <li class="md-nav__item">
-    <a href="projects/geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="projects/ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="projects/geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -528,7 +515,7 @@
 
 
   <li class="md-nav__item">
-    <a href="projects/planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="projects/planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -708,7 +695,7 @@
 
 
   <li class="md-nav__item">
-    <a href="projects/arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="projects/arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -853,7 +840,7 @@
                 <h1 id="introduction">Introduction</h1>
 <p>These github projects are a collection of tools and improvements made to accomplish tasks as well as potential tools and applications designed for future applications. Core capabilities include tools that interact with Google Earth Engine, Planet Labs API, Arctic DEM datasets and coupling large scale data pipelines using satadd projects. These projects extends tools and stand alone CLI(s) and GUI(s) for testing and implementation on various platforms. Some tools are designed to allow for easy intergation with cloud services such as Digital Ocean along with standalone hackathon tools and collaborations.</p>
 <p><center> <strong>Projects Include work on following Platforms</strong> </center></p>
-<p><center><img alt="Project Platforms" src="https://i.imgur.com/sNqTH7f.png" /></center></p>
+<p><center><img alt="combined_logo" src="https://user-images.githubusercontent.com/6677629/67629902-68297700-f854-11e9-8379-8e613e0c3d75.png" /></center></p>
 <p>Two projects included looking at different aspects of raster analysis and landscape modeling and hence I decided to create an ArcMap toolbox with tools that I have developed and continue to develop further. The toolbox can be downloaded and added to existing toolbox to create additional functionalities. The synthetic landscape models are designed to try different randomizing and clustering algorithms. An additional project was completed during the <a href="https://www.pgc.umn.edu/">Polar Geospatial Bootcamp</a> which allows users to bulk download and process 2m high resolution ArcticDEM provided by the Polar Geospatial Center. The list now also includes a notifier application using the Slack interface along with including an application of the Clips API from Planet.</p>
 <p><center></p>
 <table>

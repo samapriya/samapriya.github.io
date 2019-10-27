@@ -75,31 +75,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-110312267-1", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
     
 <meta name="theme-color" content="#212121">
@@ -402,7 +377,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/geeup.md" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
+    <a href="../projects/ee_data/" title="Google Earth Engine Dataset lists" class="md-nav__link">
+      Google Earth Engine Dataset lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../projects/geeup/" title="Simple CLI for Google Earth Engine Uploads" class="md-nav__link">
       Simple CLI for Google Earth Engine Uploads
     </a>
   </li>
@@ -522,7 +509,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/planet_batch_slack.md" title="Planet Batch Slack Pipeline" class="md-nav__link">
+    <a href="../projects/planet_batch_slack/" title="Planet Batch Slack Pipeline" class="md-nav__link">
       Planet Batch Slack Pipeline
     </a>
   </li>
@@ -702,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects/arcmap_addon.md" title="ArcMap Addon Tools" class="md-nav__link">
+    <a href="../projects/arcmap_addon/" title="ArcMap Addon Tools" class="md-nav__link">
       ArcMap Addon Tools
     </a>
   </li>
@@ -833,7 +820,7 @@
                 
                 <p>My current work involves big data analysis and large scale data science applications utilizing geospatial technology. I work with different imagery types and I am currently involved with looking at time series data &amp; analysis of natural systems coupled with system modeling and periodicity. Most of my work includes but is not limited to remote sensing applications, large scale data processing and management, API support along with network analysis and geostatistical methods. I like solving puzzles and problems, building tools and plugins and working from the perspective of the end user with limited access.</p>
 <p><center></p>
-<p><img alt="Sam_GEE2019" src="https://user-images.githubusercontent.com/6677629/67452400-1c2ac800-f5f1-11e9-926e-f199a80b0719.jpg" /></p>
+<p><img alt="Sam_GEE2019" src="https://user-images.githubusercontent.com/6677629/67629980-de7aa900-f855-11e9-8b9d-7daa6d3b32b7.jpg" /></p>
 <p></center></p>
 <p>Contact me:
 samapriya.roy[at]gmail.com</p>
