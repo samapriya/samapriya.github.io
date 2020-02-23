@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
     
     
       
@@ -46,7 +46,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -57,13 +57,13 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,400i,700|Regular&display=fallback">
+        <style>body,input{font-family:"Google Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Regular","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
@@ -1081,8 +1081,8 @@
 <a href="https://badge.fury.io/py/gee2drive"><img alt="PyPI version" src="https://badge.fury.io/py/gee2drive.svg" /></a></p>
 <p>Google Earth Engine currently allows you to export images and assets as either GeoTiff files or TFrecords. The system splits the files if the estimated size is greater than 2GB which is the upper limit and needs the geometry to be parsed in the form of either a fusion table, a user drawn geometry or a table imported into the user's assets. While the javascript frontend is great owing to the queryable catalog whereby you can search and and export your personal and private assets, the limitation lies in batch exports. To resolve this the python API access allows you to call batch export functions but now it is limited to checking for itersects first and running without having a queryable catalog. With the same idea I created this tool which allows you to run a terminal environment where your personal and general catalog images are part of a autosuggest feature. This tool allows you to look for images based on names for example " you can search for Sentinel and it will show you full path of images which have the word sentinel in the title". It also creates a report for your image collections and images so apart from the public datasets this can also find your own datasets as well. You can then generate bandlist to make sure all bands you are exporting are of the same type and then export all images that intersect you aoi.</p>
 <p>The assumption here is
-<em> Every image in the give image have the same band structure, choose the bandlist that you know to common to all images
-</em> If the geomery is too complex use the operator feature to use a bounding box instead.
+* Every image in the give image have the same band structure, choose the bandlist that you know to common to all images
+* If the geomery is too complex use the operator feature to use a bounding box instead.
 * For now all it filters is geometry and date, and it is does not filter based on metadata (however in the examples folder I have shown how to import and use additional filter before exporting an image collection)</p>
 <p>In the future I will try to integrate some other functionalities to this environment and you can indeed run the tool without the use of the autosuggest terminal as a simple CLI. Hence the terminal feature is optional.</p>
 <h2 id="table-of-contents">Table of contents</h2>
@@ -1316,7 +1316,7 @@ exp(collection=ee.ImageCollection('LANDSAT/LC08/C01/T1_SR').filterMetadata('CLOU
       
     </div>
     
-      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
