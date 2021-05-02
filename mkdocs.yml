@@ -1,0 +1,136 @@
+site_name: Samapriya Roy
+site_description: Description of current projects on Github and updates
+site_author: Samapriya Roy
+site_url: https://github.com/samapriya
+
+
+# Copyright
+copyright: 'Copyright &copy; 2021 - 2022 Samapriya Roy'
+
+
+# Configuration
+theme:
+  name: 'material'
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Google Sans
+    code: Regular
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Options
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/samapriya
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@samapriyaroy
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/samapriyaroy
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/samapriya
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - About me: aboutme.md
+  - Current CV: cv.md
+  - Introduction: index.md
+  - PyPI Projects: pypi.md
+  - Github Projects:
+    - Additional Tools:
+      - Google home mini CLI: projects/ghome.md
+      - Simple CLI for piping Planet, Satellogic, GEE & GBDX Assets: projects/satadd.md
+    - Google Earth Engine Tools:
+      - Google Earth Engine Dataset lists: projects/ee_data.md
+      - Simple CLI for Google Earth Engine Uploads: projects/geeup.md
+      - Google Earth Engine to Drive Export Manager: projects/gee2drive.md
+      - Google Earth Engine Takeout: projects/gee_takeout.md
+      - Google Earth Engine Asset Manager Addon: projects/gee_asset_manager_addon.md
+    - Planet Tools:
+      - Planet Simple CLI for Ordersv2: projects/porder.md
+      - Planet-Mosaic-Quads-Download-CLI: projects/pbasemap.md
+      - Planet-Google Earth Engine Pipeline CLI: projects/planet_gee_pipeline_cli.md
+      - Clip Ship Planet CLI: projects/clip_ship_planet_cli.md
+      - Planet Batch Slack Pipeline: projects/planet_batch_slack.md
+      - Planet Bulk Data Downloader GUI: projects/planet_pipeline_gui.md
+      - Planet-Google Earth Engine Pipeline GUI: projects/planet_gee_pipeline_gui.md
+    - National Science Foundation Tools:
+      - Jetstream Unofficial Addon: projects/jetstream_unofficial_cli.md
+      - NSF Awards API Simple CLI: projects/nsfsearch.md
+    - Digital Ocean and VM Tools:
+      - pydrop Minimal Digital Ocean CLI: projects/pydrop.md
+    - PGC ArcticDEM Tools:
+      - ArcticDEM-Batch-Pipeline: projects/arcticdem_download.md
+    - ESRI ArcMap Addons:
+      - ArcMap Addon Tools: projects/arcmap_addon.md
+    - Slack Tools:
+      - Slack Notifier CLI Addon: projects/slack_notifier_cli_addon.md
+    - Synthetic Landscape Generation Models: projects/synthetic_models.md
+  - Open Impact: projects/open-impact.md
+  - Project Citations: project-citations.md
+  - Release notes: release-notes.md
+  - Credits: credits.md
